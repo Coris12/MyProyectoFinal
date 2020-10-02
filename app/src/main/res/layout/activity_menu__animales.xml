@@ -23,26 +23,39 @@
 
     <Button
         android:id="@+id/btnParejaA"
-        android:layout_width="116dp"
-        android:layout_height="116dp"
-        android:text="nivel parejas"
+        android:layout_width="251dp"
+        android:layout_height="84dp"
+        android:text="Level 1"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.127"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.415" />
+        app:layout_constraintVertical_bias="0.256" />
+
     <Button
         android:id="@+id/btnnivel2"
-        android:layout_width="116dp"
-        android:layout_height="116dp"
-        android:text="nivel 2"
+        android:layout_width="248dp"
+        android:layout_height="84dp"
+        android:text="Level 2"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.715"
-        app:layout_constraintHorizontal_bias="0.127"/>
+        app:layout_constraintVertical_bias="0.466" />
+
+    <Button
+        android:id="@+id/btnlevel3"
+        android:layout_width="251dp"
+        android:layout_height="89dp"
+        android:text="Level 3"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.68" />
 </androidx.constraintlayout.widget.ConstraintLayout>
