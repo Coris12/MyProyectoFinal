@@ -25,7 +25,7 @@ public class Nivel3_Animales extends AppCompatActivity {
     //array para las imagenes
     Integer[] cardsArray = {101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210};
 
-    //acutual imagenes
+
     //acutual imagenes
     int image101, image102, image103, image104, image105, image106, image107, image108, image109, image110,
             image201, image202, image203, image204, image205, image206, image207, image208, image209, image210;
@@ -276,16 +276,16 @@ public class Nivel3_Animales extends AppCompatActivity {
     }
 
     private void doStuff(ImageView iv, int card){
-        MediaPlayer mediaPlayer101 = MediaPlayer.create(this, R.raw.cat);
-        MediaPlayer mediaPlayer102 = MediaPlayer.create(this, R.raw.chicken);
-        MediaPlayer mediaPlayer103 = MediaPlayer.create(this, R.raw.cow);
-        MediaPlayer mediaPlayer104 = MediaPlayer.create(this, R.raw.donkey);
-        MediaPlayer mediaPlayer105 = MediaPlayer.create(this, R.raw.pig);
-        MediaPlayer mediaPlayer106 = MediaPlayer.create(this, R.raw.sheep);
-        MediaPlayer mediaPlayer107 = MediaPlayer.create(this, R.raw.frog);
-        MediaPlayer mediaPlayer108 = MediaPlayer.create(this, R.raw.shark);
-        MediaPlayer mediaPlayer109 = MediaPlayer.create(this, R.raw.dog);
-        MediaPlayer mediaPlayer110 = MediaPlayer.create(this, R.raw.turtle);
+        MediaPlayer mediaPlayer101 = MediaPlayer.create(this, R.raw.p);
+        MediaPlayer mediaPlayer102 = MediaPlayer.create(this, R.raw.q);
+        MediaPlayer mediaPlayer103 = MediaPlayer.create(this, R.raw.r);
+        MediaPlayer mediaPlayer105 = MediaPlayer.create(this, R.raw.s);
+        //MediaPlayer mediaPlayer106= MediaPlayer.create(this, R.raw.t);
+        MediaPlayer mediaPlayer104 = MediaPlayer.create(this, R.raw.u);
+        MediaPlayer mediaPlayer107 = MediaPlayer.create(this, R.raw.v);
+        MediaPlayer mediaPlayer108 = MediaPlayer.create(this, R.raw.w);
+        MediaPlayer mediaPlayer109 = MediaPlayer.create(this, R.raw.x);
+        MediaPlayer mediaPlayer110 = MediaPlayer.create(this, R.raw.y);
         //establecer la imagen correcta en la vista de imagen
         if (cardsArray[card] ==101){
             iv.setImageResource(image101);
@@ -674,7 +674,7 @@ public class Nivel3_Animales extends AppCompatActivity {
         image207 = R.drawable.frog_2;
         image208 = R.drawable.shark_2;
         image209 = R.drawable.dog_2;
-        image210 = R.drawable.turtle_2;
+        image210 = R.drawable.frog_2;
 
 
     }
