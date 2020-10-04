@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    android:id="@+id/activity_nivel2_abecedario"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingRight="16dp"
-    android:paddingLeft="16dp"
-    android:paddingTop="16dp"
     android:paddingBottom="16dp"
-    android:id="@+id/activity_nivel1_abecedario"
-    tools:context=".nivel1Abecedario">
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".Nivel2_abecedario">
 
     <include
+        layout="@layout/imagenesn2abc"
         android:layout_width="wrap_content"
-        android:layout_height="500dp"
-        layout="@layout/imagenesn1abc"
+        android:layout_height="300dp"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"/>
 
@@ -39,4 +40,7 @@
         android:text="P2: 0"
         android:textColor="#070606"
         android:textSize="32dp" />
+
+
+
 </RelativeLayout>

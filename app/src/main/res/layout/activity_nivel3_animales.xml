@@ -1,42 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    android:id="@+id/activity_nivel3_animales"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingRight="16dp"
-    android:paddingLeft="16dp"
-    android:paddingTop="16dp"
     android:paddingBottom="16dp"
-    android:id="@+id/activity_nivel1_abecedario"
-    tools:context=".nivel1Abecedario">
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".Nivel3_Animales">
 
     <include
+        layout="@layout/imagenes3animales"
         android:layout_width="wrap_content"
-        android:layout_height="500dp"
-        layout="@layout/imagenesn1abc"
+        android:layout_height="300dp"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"/>
 
     <TextView
         android:id="@+id/tv_p1"
-        android:layout_width="wrap_content"
+        android:layout_width="94dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="87dp"
         android:text="P1: 0"
-        android:textColor="#070606"
-        android:textSize="32dp" />
+        android:textSize="32dp"
+        android:textColor="#000000"/>
 
     <TextView
         android:id="@+id/tv_p2"
-        android:layout_width="wrap_content"
+        android:layout_width="86dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
+        android:layout_marginTop="87dp"
+        android:layout_marginEnd="41dp"
         android:text="P2: 0"
-        android:textColor="#070606"
-        android:textSize="32dp" />
+        android:textSize="32dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+
+
 </RelativeLayout>

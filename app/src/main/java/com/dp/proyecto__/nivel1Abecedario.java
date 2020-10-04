@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.ImageView;
+import android.media.MediaPlayer;
 import android.widget.TextView;
 
 import java.util.Arrays;
@@ -167,52 +168,52 @@ public class nivel1Abecedario extends AppCompatActivity {
     private void doStuff(ImageView iv,int card){
         if(TargetaArray[card] ==101){
             iv.setImageResource(imagen101);
-            //MediaPlayer mediaPlayer101 = MediaPlayer.create(this, R.raw.cat);
-            //mediaPlayer101.start();
+            MediaPlayer mediaPlayer101 = MediaPlayer.create(this, R.raw.a);
+            mediaPlayer101.start();
         }else if(TargetaArray[card] ==102){
             iv.setImageResource(imagen102);
-            //MediaPlayer mediaPlayer102 = MediaPlayer.create(this, R.raw.chicken);
-            //mediaPlayer102.start();
+            MediaPlayer mediaPlayer102 = MediaPlayer.create(this, R.raw.b);
+            mediaPlayer102.start();
         }else if(TargetaArray[card] ==103){
             iv.setImageResource(imagen103);
-            //MediaPlayer mediaPlayer103 = MediaPlayer.create(this, R.raw.cow);
-            //mediaPlayer103.start();
+            MediaPlayer mediaPlayer103 = MediaPlayer.create(this, R.raw.c);
+            mediaPlayer103.start();
         }else if(TargetaArray[card] ==104){
             iv.setImageResource(imagen104);
-            //MediaPlayer mediaPlayer104 = MediaPlayer.create(this, R.raw.bird);
-            //mediaPlayer104.start();
+            MediaPlayer mediaPlayer104 = MediaPlayer.create(this, R.raw.d);
+            mediaPlayer104.start();
         }else if(TargetaArray[card] ==105){
             iv.setImageResource(imagen105);
-            //MediaPlayer mediaPlayer105 = MediaPlayer.create(this, R.raw.bird);
-            // mediaPlayer105.start();
+            MediaPlayer mediaPlayer105 = MediaPlayer.create(this, R.raw.e);
+            mediaPlayer105.start();
         }else if(TargetaArray[card] ==106){
             iv.setImageResource(imagen106);
-            //MediaPlayer mediaPlayer106 = MediaPlayer.create(this, R.raw.pig);
-            //mediaPlayer106.start();
+            MediaPlayer mediaPlayer106 = MediaPlayer.create(this, R.raw.f);
+            mediaPlayer106.start();
         }else if(TargetaArray[card] ==201){
             iv.setImageResource(imagen201);
-            //MediaPlayer mediaPlayer101 = MediaPlayer.create(this, R.raw.cat);
-            //mediaPlayer101.start();
+            MediaPlayer mediaPlayer101 = MediaPlayer.create(this, R.raw.a);
+            mediaPlayer101.start();
         }else if(TargetaArray[card] ==202){
             iv.setImageResource(imagen202);
-            //MediaPlayer mediaPlayer102 = MediaPlayer.create(this, R.raw.chicken);
-            //mediaPlayer102.start();
+            MediaPlayer mediaPlayer102 = MediaPlayer.create(this, R.raw.b);
+            mediaPlayer102.start();
         }else if(TargetaArray[card] ==203){
             iv.setImageResource(imagen203);
-            //MediaPlayer mediaPlayer103 = MediaPlayer.create(this, R.raw.cow);
-            //mediaPlayer103.start();
+            MediaPlayer mediaPlayer103 = MediaPlayer.create(this, R.raw.c);
+            mediaPlayer103.start();
         }else if(TargetaArray[card] ==204){
             iv.setImageResource(imagen204);
-            //MediaPlayer mediaPlayer104 = MediaPlayer.create(this, R.raw.bird);
-            //mediaPlayer104.start();
+            MediaPlayer mediaPlayer104 = MediaPlayer.create(this, R.raw.d);
+            mediaPlayer104.start();
         }else if(TargetaArray[card] ==205){
             iv.setImageResource(imagen205);
-            //MediaPlayer mediaPlayer105 = MediaPlayer.create(this, R.raw.bird);
-            //mediaPlayer105.start();
+            MediaPlayer mediaPlayer105 = MediaPlayer.create(this, R.raw.e);
+            mediaPlayer105.start();
         }else if(TargetaArray[card] ==206){
             iv.setImageResource(imagen206);
-            //MediaPlayer mediaPlayer106 = MediaPlayer.create(this, R.raw.pig);
-            //mediaPlayer106.start();
+            MediaPlayer mediaPlayer106 = MediaPlayer.create(this, R.raw.f);
+            mediaPlayer106.start();
         }
         //verificar el numero de tarjeta  seleccionadas
         if(NumeroTarjeta==1){
@@ -393,15 +394,15 @@ public class nivel1Abecedario extends AppCompatActivity {
         imagen101= R.drawable.a;
         imagen102= R.drawable.b;
         imagen103= R.drawable.c;
-        imagen104= R.drawable.c;
+        imagen104= R.drawable.d;
         imagen105= R.drawable.e;
         imagen106= R.drawable.f;
-        imagen201= R.drawable.a1;
-        imagen202= R.drawable.b1;
-        imagen203= R.drawable.c1;
-        imagen204= R.drawable.d1;
-        imagen205= R.drawable.e1;
-        imagen206= R.drawable.f1;
+        imagen201= R.drawable.aa;
+        imagen202= R.drawable.bb;
+        imagen203= R.drawable.cc;
+        imagen204= R.drawable.dd;
+        imagen205= R.drawable.ee;
+        imagen206= R.drawable.ff;
     }
 }
 

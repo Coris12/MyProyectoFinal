@@ -8,13 +8,13 @@
     android:paddingLeft="16dp"
     android:paddingTop="16dp"
     android:paddingBottom="16dp"
-    android:id="@+id/activity_nivel1_abecedario"
-    tools:context=".nivel1Abecedario">
+    android:id="@+id/activity_nivel3_animales"
+    tools:context=".Nivel3_Abecedario">
 
     <include
         android:layout_width="wrap_content"
         android:layout_height="500dp"
-        layout="@layout/imagenesn1abc"
+        layout="@layout/imagenesn3abc"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"/>
 

@@ -7,25 +7,23 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Menu_Animales extends AppCompatActivity  {
-
-
+public class Alphabet_menu extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu__animales);
+        setContentView(R.layout.activity_alpabeth_menu);
 
-        Button nivel1 = (Button) findViewById(R.id.btnnivel1);
-        Button nivel2 = (Button) findViewById(R.id.btnnivel2);
-        Button nivel3 = (Button) findViewById(R.id.btnlevel3);
+        Button nivel1 = (Button) findViewById(R.id.btn1);
+        Button nivel2 = (Button) findViewById(R.id.btn2);
+        Button nivel3 = (Button) findViewById(R.id.btn3);
 
 
         nivel1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intentAnimales= new Intent (getApplicationContext(), Pareja_Animales.class);
-                startActivity(intentAnimales);
+                Intent intentAbecedario= new Intent (getApplicationContext(), nivel1Abecedario.class);
+                startActivity(intentAbecedario);
                 finish();
 
             }
@@ -34,8 +32,8 @@ public class Menu_Animales extends AppCompatActivity  {
         nivel2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentAnimal= new Intent (getApplicationContext(), Nivel2_Animales.class);
-                startActivity(intentAnimal);
+                Intent intentAbecedario= new Intent (getApplicationContext(), Nivel2_abecedario.class);
+                startActivity(intentAbecedario);
                 finish();
             }
         });
@@ -43,10 +41,11 @@ public class Menu_Animales extends AppCompatActivity  {
         nivel3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentAnimal= new Intent (getApplicationContext(),Nivel3_Animales.class);
-                startActivity(intentAnimal);
+                Intent intentAbecedario= new Intent (getApplicationContext(),Nivel3_Abecedario.class);
+                startActivity(intentAbecedario);
                 finish();
             }
         });
 
     }}
+

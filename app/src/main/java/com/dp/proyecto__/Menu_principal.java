@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 
 public class Menu_principal extends AppCompatActivity {
 
@@ -17,6 +16,7 @@ public class Menu_principal extends AppCompatActivity {
 
         Button botonanimales = (Button) findViewById(R.id.btnAnimales);
         Button botonabecedarion1 = (Button) findViewById(R.id.btnAlfabeto);
+        Button botonnumeros = (Button) findViewById(R.id.btnNumeros);
 
 
         botonanimales.setOnClickListener(new View.OnClickListener() {
@@ -32,12 +32,20 @@ public class Menu_principal extends AppCompatActivity {
         botonabecedarion1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentAbecedario= new Intent (getApplicationContext(), nivel1Abecedario.class);
+                Intent intentAbecedario= new Intent (getApplicationContext(), Alphabet_menu.class);
                 startActivity(intentAbecedario);
                 finish();
             }
         });
 
+        botonnumeros.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentAbecedario= new Intent (getApplicationContext(),Number_menu.class);
+                startActivity(intentAbecedario);
+                finish();
+            }
+        });
 
     }}
 /*
