@@ -33,7 +33,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.613"
         android:src="@drawable/numeros"
-        android:drawableStart="@drawable/numeros"/>
+        />
 
     <Button
         android:id="@+id/btnColores"
@@ -46,7 +46,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.271"
-        android:drawableStart="@drawable/color"/>
+        />
 
     <Button
         android:id="@+id/btnAlfabeto"
@@ -59,7 +59,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.6"
-        android:drawableStart="@drawable/abecedario"/>
+        />
 
     <TextView
         android:id="@+id/textView4"
@@ -86,7 +86,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.271"
-        android:drawableStart="@drawable/animales"/>
+      />
 
     <TextView
         android:id="@+id/texAlfabeto"
