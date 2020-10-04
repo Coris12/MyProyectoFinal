@@ -11,30 +11,31 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Menu Animales"
+        android:fontFamily="sans-serif-black"
+        android:text="Animals"
         android:textColor="#0B0A0A"
-        android:textSize="30sp"
+        android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.499"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.066" />
+        app:layout_constraintVertical_bias="0.071" />
 
     <Button
         android:id="@+id/btnnivel1"
         android:layout_width="251dp"
         android:layout_height="84dp"
-        android:text="Level 1"
-        android:backgroundTint="#CC1717"
-        android:textSize="24sp"
         android:background="@drawable/ovalo"
+        android:backgroundTint="#CC1717"
+        android:text="Level 1"
+        android:textSize="24sp"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.256" />
+        app:layout_constraintVertical_bias="0.316" />
 
     <Button
         android:id="@+id/btnnivel2"
@@ -47,23 +48,23 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintHorizontal_bias="0.521"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.466" />
+        app:layout_constraintVertical_bias="0.581" />
 
     <Button
         android:id="@+id/btnlevel3"
         android:layout_width="251dp"
         android:layout_height="89dp"
-        android:text="Level 3"
-        android:backgroundTint="#CC1717"
         android:background="@drawable/ovalo"
+        android:backgroundTint="#CC1717"
+        android:text="Level 3"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.68" />
+        app:layout_constraintVertical_bias="0.817" />
 </androidx.constraintlayout.widget.ConstraintLayout>

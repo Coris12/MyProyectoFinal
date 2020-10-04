@@ -35,7 +35,7 @@ public class Pareja_Animales extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pareja__animales);
+        setContentView(R.layout.activity_nivel1_abecedario);
 
         tv_p1 = (TextView) findViewById(R.id.tv_p1);
         tv_p2 = (TextView) findViewById(R.id.tv_p2);
@@ -180,11 +180,11 @@ public class Pareja_Animales extends AppCompatActivity {
             mediaPlayer103.start();
         }else if(TargetaArray[card] ==104){
             iv.setImageResource(imagen104);
-            MediaPlayer mediaPlayer104 = MediaPlayer.create(this, R.raw.bird);
+            MediaPlayer mediaPlayer104 = MediaPlayer.create(this, R.raw.donkey);
             mediaPlayer104.start();
         }else if(TargetaArray[card] ==105){
             iv.setImageResource(imagen105);
-            MediaPlayer mediaPlayer105 = MediaPlayer.create(this, R.raw.bird);
+            MediaPlayer mediaPlayer105 = MediaPlayer.create(this, R.raw.frog);
             mediaPlayer105.start();
         }else if(TargetaArray[card] ==106){
             iv.setImageResource(imagen106);
@@ -204,11 +204,11 @@ public class Pareja_Animales extends AppCompatActivity {
             mediaPlayer103.start();
         }else if(TargetaArray[card] ==204){
             iv.setImageResource(imagen204);
-            MediaPlayer mediaPlayer104 = MediaPlayer.create(this, R.raw.bird);
+            MediaPlayer mediaPlayer104 = MediaPlayer.create(this, R.raw.donkey);
             mediaPlayer104.start();
         }else if(TargetaArray[card] ==205){
             iv.setImageResource(imagen205);
-            MediaPlayer mediaPlayer105 = MediaPlayer.create(this, R.raw.bird);
+            MediaPlayer mediaPlayer105 = MediaPlayer.create(this, R.raw.frog);
             mediaPlayer105.start();
         }else if(TargetaArray[card] ==206){
             iv.setImageResource(imagen206);
@@ -380,7 +380,7 @@ public class Pareja_Animales extends AppCompatActivity {
             }).setNegativeButton("Salir", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialogInterface, int i) {
-                    Intent intent = new Intent(getApplicationContext(),Pareja_Animales.class);
+                    Intent intent = new Intent(getApplicationContext(), Pareja_Animales.class);
                     startActivity(intent);
                     finish();
                 }
@@ -397,11 +397,11 @@ public class Pareja_Animales extends AppCompatActivity {
         imagen104= R.drawable.donkey_1;
         imagen105= R.drawable.frog_1;
         imagen106= R.drawable.pig_1;
-        imagen201= R.drawable.cat_2;
+        imagen201= R.drawable.cat_1;
         imagen202= R.drawable.chicken_2;
         imagen203= R.drawable.cow_2;
         imagen204= R.drawable.donkey_2;
-        imagen205= R.drawable.frog_1;
+        imagen205= R.drawable.frog_2;
         imagen206= R.drawable.pig_2;
     }
 }

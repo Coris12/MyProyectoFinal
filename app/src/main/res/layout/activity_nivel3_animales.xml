@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    android:id="@+id/activity_nivel3_animales"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_nivel3_animales"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="16dp"
+    android:background="@drawable/animales_n2"
     android:paddingLeft="16dp"
-    android:paddingRight="16dp"
     android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
     tools:context=".Nivel3_Animales">
 
     <include
         layout="@layout/imagenes3animales"
         android:layout_width="wrap_content"
         android:layout_height="300dp"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
 
     <TextView
         android:id="@+id/tv_p1"
@@ -28,8 +28,8 @@
         android:layout_marginStart="41dp"
         android:layout_marginTop="87dp"
         android:text="P1: 0"
-        android:textSize="32dp"
-        android:textColor="#000000"/>
+        android:textColor="#000000"
+        android:textSize="32dp" />
 
     <TextView
         android:id="@+id/tv_p2"
@@ -40,15 +40,14 @@
         android:layout_marginTop="87dp"
         android:layout_marginEnd="41dp"
         android:text="P2: 0"
-        android:textSize="32dp"
-        android:textColor="#000000"/>
+        android:textColor="#000000"
+        android:textSize="32dp" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView" />
-
 
 
 </RelativeLayout>
