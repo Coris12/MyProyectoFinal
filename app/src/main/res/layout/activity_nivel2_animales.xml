@@ -5,7 +5,7 @@
     android:id="@+id/activity_nivel2_animales"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/animales_n2"
+    android:background="@drawable/ani2_fondo"
     android:paddingLeft="16dp"
     android:paddingTop="16dp"
     android:paddingRight="16dp"

@@ -8,7 +8,7 @@
        android:label="LEARNING TOGETHER"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Design.NoActionBar">
+        android:theme="@style/AppTheme">
         <activity android:name=".Number_menu" />
         <activity android:name=".Alphabet_menu" />
         <activity android:name=".Nivel3_Animales" />
