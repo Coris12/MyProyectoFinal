@@ -22,6 +22,8 @@ public class Nivel2_Animales extends AppCompatActivity {
     ImageView iv_11, iv_12, iv_13, iv_14, iv_21, iv_22, iv_23, iv_24, iv_31, iv_32, iv_33, iv_34, iv_41, iv_42, iv_43, iv_44;
     Integer[] cardsArray = {101, 102, 103, 104, 105, 106, 107, 108, 201, 202, 203, 204, 205, 206, 207, 208};
 
+
+
     //acutual imagenes
     int image101, image102, image103, image104, image105, image106, image107, image108,
             image201, image202, image203, image204, image205, image206, image207, image208;
@@ -231,67 +233,67 @@ public class Nivel2_Animales extends AppCompatActivity {
         //establecer la imagen correcta en la vista de imagen
         if (cardsArray[card] == 101) {
             iv.setImageResource(image101);
-            MediaPlayer mediaPlayer101 = MediaPlayer.create(this, R.raw.cat);
+            MediaPlayer mediaPlayer101 = MediaPlayer.create(this, R.raw.h);
             mediaPlayer101.start();
         } else if (cardsArray[card] == 102) {
             iv.setImageResource(image102);
-            MediaPlayer mediaPlayer102 = MediaPlayer.create(this, R.raw.chicken);
+            MediaPlayer mediaPlayer102 = MediaPlayer.create(this, R.raw.i);
             mediaPlayer102.start();
         } else if (cardsArray[card] == 103) {
             iv.setImageResource(image103);
-            MediaPlayer mediaPlayer103 = MediaPlayer.create(this, R.raw.cow);
+            MediaPlayer mediaPlayer103 = MediaPlayer.create(this, R.raw.j);
             mediaPlayer103.start();
         } else if (cardsArray[card] == 104) {
             iv.setImageResource(image104);
-            MediaPlayer mediaPlayer104 = MediaPlayer.create(this, R.raw.donkey);
+            MediaPlayer mediaPlayer104 = MediaPlayer.create(this, R.raw.k);
             mediaPlayer104.start();
         } else if (cardsArray[card] == 105) {
             iv.setImageResource(image105);
-            MediaPlayer mediaPlayer105 = MediaPlayer.create(this, R.raw.pig);
+            MediaPlayer mediaPlayer105 = MediaPlayer.create(this, R.raw.l);
             mediaPlayer105.start();
         } else if (cardsArray[card] == 106) {
             iv.setImageResource(image106);
-            MediaPlayer mediaPlayer106 = MediaPlayer.create(this, R.raw.sheep);
+            MediaPlayer mediaPlayer106 = MediaPlayer.create(this, R.raw.m);
             mediaPlayer106.start();
         } else if (cardsArray[card] == 107) {
             iv.setImageResource(image107);
-            MediaPlayer mediaPlayer107 = MediaPlayer.create(this, R.raw.frog);
+            MediaPlayer mediaPlayer107 = MediaPlayer.create(this, R.raw.n);
             mediaPlayer107.start();
         } else if (cardsArray[card] == 108) {
             iv.setImageResource(image108);
-            MediaPlayer mediaPlayer108 = MediaPlayer.create(this, R.raw.shark);
+            MediaPlayer mediaPlayer108 = MediaPlayer.create(this, R.raw.o);
             mediaPlayer108.start();
         } else if (cardsArray[card] == 201) {
             iv.setImageResource(image201);
-            MediaPlayer mediaPlayer201 = MediaPlayer.create(this, R.raw.cat);
+            MediaPlayer mediaPlayer201 = MediaPlayer.create(this, R.raw.h);
             mediaPlayer201.start();
         } else if (cardsArray[card] == 202) {
             iv.setImageResource(image202);
-            MediaPlayer mediaPlayer202 = MediaPlayer.create(this, R.raw.chicken);
+            MediaPlayer mediaPlayer202 = MediaPlayer.create(this, R.raw.i);
             mediaPlayer202.start();
         } else if (cardsArray[card] == 203) {
             iv.setImageResource(image203);
-            MediaPlayer mediaPlayer203 = MediaPlayer.create(this, R.raw.cow);
+            MediaPlayer mediaPlayer203 = MediaPlayer.create(this, R.raw.j);
             mediaPlayer203.start();
         } else if (cardsArray[card] == 204) {
             iv.setImageResource(image204);
-            MediaPlayer mediaPlayer204 = MediaPlayer.create(this, R.raw.donkey);
+            MediaPlayer mediaPlayer204 = MediaPlayer.create(this, R.raw.k);
             mediaPlayer204.start();
         } else if (cardsArray[card] == 205) {
             iv.setImageResource(image205);
-            MediaPlayer mediaPlayer205 = MediaPlayer.create(this, R.raw.pig);
+            MediaPlayer mediaPlayer205 = MediaPlayer.create(this, R.raw.l);
             mediaPlayer205.start();
         } else if (cardsArray[card] == 206) {
             iv.setImageResource(image206);
-            MediaPlayer mediaPlayer206 = MediaPlayer.create(this, R.raw.sheep);
+            MediaPlayer mediaPlayer206 = MediaPlayer.create(this, R.raw.m);
             mediaPlayer206.start();
         } else if (cardsArray[card] == 207) {
             iv.setImageResource(image207);
-            MediaPlayer mediaPlayer207 = MediaPlayer.create(this, R.raw.frog);
+            MediaPlayer mediaPlayer207 = MediaPlayer.create(this, R.raw.n);
             mediaPlayer207.start();
         } else if (cardsArray[card] == 208) {
             iv.setImageResource(image208);
-            MediaPlayer mediaPlayer208 = MediaPlayer.create(this, R.raw.shark);
+            MediaPlayer mediaPlayer208 = MediaPlayer.create(this, R.raw.o);
             mediaPlayer208.start();
         }
 
