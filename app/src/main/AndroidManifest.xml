@@ -13,11 +13,11 @@
         <activity android:name=".Alphabet_menu" />
         <activity android:name=".Nivel3_Animales" />
         <activity android:name=".Nivel2_Animales" />
-        <activity android:name=".Pareja_Animales" />
         <activity android:name=".Nivel3_Abecedario" />
         <activity android:name=".Nivel2_abecedario" />
         <activity android:name=".nivel1Abecedario" />
         <activity android:name=".Menu_principal" />
+        <activity android:name=".Pareja_Animales" />
         <activity android:name=".Menu_Animales" />
         <activity android:name=".Registro" />
         <activity android:name=".MainActivity">

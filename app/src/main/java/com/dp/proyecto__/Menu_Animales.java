@@ -24,10 +24,9 @@ public class Menu_Animales extends AppCompatActivity  {
         nivel1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intentAnimales= new Intent (getApplicationContext(), Pareja_Animales.class);
-                startActivity(intentAnimales);
+                Intent intentParejas= new Intent(getApplicationContext(), Pareja_Animales.class);
+                startActivity(intentParejas);
                 finish();
-
             }
         });
 
