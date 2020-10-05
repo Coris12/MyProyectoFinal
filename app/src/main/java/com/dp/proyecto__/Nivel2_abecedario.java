@@ -7,6 +7,7 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -17,6 +18,8 @@ import java.util.Arrays;
 import java.util.Collections;
 
 public class Nivel2_abecedario extends AppCompatActivity {
+
+
     TextView tv_p1, tv_p2;
 
     ImageView iv_11, iv_12, iv_13, iv_14, iv_21, iv_22, iv_23, iv_24, iv_31, iv_32, iv_33, iv_34, iv_41, iv_42, iv_43, iv_44;
@@ -38,6 +41,17 @@ public class Nivel2_abecedario extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nivel2_abecedario);
+
+        ImageButton botonRegresar = (ImageButton)  findViewById(R.id.btn6);
+        botonRegresar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentAnimal= new Intent (getApplicationContext(),Alphabet_menu.class);
+                startActivity(intentAnimal);
+                finish();
+            }
+        });
+
         tv_p1 =(TextView) findViewById(R.id.tv_p1);
         tv_p2 =(TextView) findViewById(R.id.tv_p2);
 

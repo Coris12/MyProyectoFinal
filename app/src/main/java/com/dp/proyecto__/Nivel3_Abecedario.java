@@ -7,6 +7,7 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -39,6 +40,16 @@ public class Nivel3_Abecedario extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nivel_tres_abecedario);
+
+        ImageButton botonRegresar = (ImageButton)  findViewById(R.id.btn8);
+        botonRegresar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentAnimal= new Intent (getApplicationContext(),Alphabet_menu.class);
+                startActivity(intentAnimal);
+                finish();
+            }
+        });
 
         tv_p1 =(TextView) findViewById(R.id.tv_p1);
         tv_p2 =(TextView) findViewById(R.id.tv_p2);

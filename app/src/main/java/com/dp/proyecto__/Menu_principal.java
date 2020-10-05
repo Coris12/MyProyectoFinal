@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class Menu_principal extends AppCompatActivity {
 
@@ -18,7 +19,7 @@ public class Menu_principal extends AppCompatActivity {
         Button botonabecedarion1 = (Button) findViewById(R.id.btnAlfabeto);
         Button botonnumeros = (Button) findViewById(R.id.btnNumeros);
         Button botoncolores = (Button) findViewById(R.id.btnColores);
-
+        ImageButton regresar =(ImageButton) findViewById(R.id.btnregresar4) ;
 
         botonanimales.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,6 +55,16 @@ public class Menu_principal extends AppCompatActivity {
                 Intent intentAbecedario= new Intent (getApplicationContext(),Color_menu.class);
                 startActivity(intentAbecedario);
                 finish();
+            }
+        });
+
+        regresar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentAnimales= new Intent (getApplicationContext(), Menu_Animales.class);
+                startActivity(intentAnimales);
+                finish();
+
             }
         });
 

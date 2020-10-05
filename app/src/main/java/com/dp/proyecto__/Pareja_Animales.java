@@ -7,6 +7,7 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -36,6 +37,16 @@ public class Pareja_Animales extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nivel1_abecedario);
+
+        ImageButton botonRegresar = (ImageButton)  findViewById(R.id.btn9);
+        botonRegresar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentAnimal= new Intent (getApplicationContext(),Menu_Animales.class);
+                startActivity(intentAnimal);
+                finish();
+            }
+        });
 
         tv_p1 = (TextView) findViewById(R.id.tv_p1);
         tv_p2 = (TextView) findViewById(R.id.tv_p2);
@@ -168,19 +179,19 @@ public class Pareja_Animales extends AppCompatActivity {
     private void doStuff(ImageView iv,int card){
         if(TargetaArray[card] ==101){
             iv.setImageResource(imagen101);
-            MediaPlayer mediaPlayer101 = MediaPlayer.create(this, R.raw.gato);
+            MediaPlayer mediaPlayer101 = MediaPlayer.create(this, R.raw.cat);
             mediaPlayer101.start();
         }else if(TargetaArray[card] ==102){
             iv.setImageResource(imagen102);
-            MediaPlayer mediaPlayer102 = MediaPlayer.create(this, R.raw.shark);
+            MediaPlayer mediaPlayer102 = MediaPlayer.create(this, R.raw.chicken);
             mediaPlayer102.start();
         }else if(TargetaArray[card] ==103){
             iv.setImageResource(imagen103);
-            MediaPlayer mediaPlayer103 = MediaPlayer.create(this, R.raw.shark);
+            MediaPlayer mediaPlayer103 = MediaPlayer.create(this, R.raw.cow);
             mediaPlayer103.start();
         }else if(TargetaArray[card] ==104){
             iv.setImageResource(imagen104);
-            MediaPlayer mediaPlayer104 = MediaPlayer.create(this, R.raw.shark);
+            MediaPlayer mediaPlayer104 = MediaPlayer.create(this, R.raw.donkey);
             mediaPlayer104.start();
         }else if(TargetaArray[card] ==105){
             iv.setImageResource(imagen105);
@@ -188,11 +199,11 @@ public class Pareja_Animales extends AppCompatActivity {
             mediaPlayer105.start();
         }else if(TargetaArray[card] ==106){
             iv.setImageResource(imagen106);
-            MediaPlayer mediaPlayer106 = MediaPlayer.create(this, R.raw.shark);
+            MediaPlayer mediaPlayer106 = MediaPlayer.create(this, R.raw.pig);
             mediaPlayer106.start();
         }else if(TargetaArray[card] ==201){
             iv.setImageResource(imagen201);
-            MediaPlayer mediaPlayer101 = MediaPlayer.create(this, R.raw.gato);
+            MediaPlayer mediaPlayer101 = MediaPlayer.create(this, R.raw.cat);
             mediaPlayer101.start();
         }else if(TargetaArray[card] ==202){
             iv.setImageResource(imagen202);
@@ -212,7 +223,7 @@ public class Pareja_Animales extends AppCompatActivity {
             mediaPlayer105.start();
         }else if(TargetaArray[card] ==206){
             iv.setImageResource(imagen206);
-            MediaPlayer mediaPlayer106 = MediaPlayer.create(this, R.raw.f);
+            MediaPlayer mediaPlayer106 = MediaPlayer.create(this, R.raw.pig);
             mediaPlayer106.start();
         }
         //verificar el numero de tarjeta  seleccionadas

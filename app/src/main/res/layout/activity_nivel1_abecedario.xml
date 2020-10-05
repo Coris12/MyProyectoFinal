@@ -5,12 +5,22 @@
     android:id="@+id/activity_nivel1_abecedario"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo_2"
+    android:background="@drawable/fondos"
     android:paddingLeft="16dp"
     android:paddingTop="16dp"
     android:paddingRight="16dp"
     android:paddingBottom="16dp"
     tools:context=".nivel1Abecedario">
+
+    <ImageButton
+        android:id="@+id/btn7"
+        android:layout_width="59dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="21dp"
+        android:background="@drawable/ovalo"
+        android:backgroundTint="@color/colorAccent"
+        app:srcCompat="?attr/homeAsUpIndicator" />
 
     <include
         layout="@layout/imagenesn1abc"
