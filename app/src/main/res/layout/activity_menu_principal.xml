@@ -25,41 +25,38 @@
         android:id="@+id/btnNumeros"
         android:layout_width="113dp"
         android:layout_height="113dp"
-        android:text="Numeros"
+        android:background="@drawable/numeros"
+        android:src="@drawable/numeros"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.197"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.613"
-        android:src="@drawable/numeros"
-        />
+        app:layout_constraintVertical_bias="0.613" />
 
     <Button
         android:id="@+id/btnColores"
         android:layout_width="113dp"
         android:layout_height="113dp"
-        android:text="Colores"
+        android:background="@drawable/color"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.825"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.271"
-        />
+        app:layout_constraintVertical_bias="0.271" />
 
     <Button
         android:id="@+id/btnAlfabeto"
         android:layout_width="113dp"
         android:layout_height="113dp"
-        android:text="Alfabeto"
+        android:background="@drawable/abecedario"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.825"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.6"
-        />
+        app:layout_constraintVertical_bias="0.6" />
 
     <TextView
         android:id="@+id/textView4"
@@ -79,14 +76,13 @@
         android:id="@+id/btnAnimales"
         android:layout_width="113dp"
         android:layout_height="113dp"
-        android:text="Animales"
+        android:background="@drawable/animales"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.197"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.271"
-      />
+        app:layout_constraintVertical_bias="0.271" />
 
     <TextView
         android:id="@+id/texAlfabeto"

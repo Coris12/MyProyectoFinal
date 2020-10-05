@@ -7,12 +7,13 @@
     android:layout_height="match_parent"
     android:paddingLeft="16dp"
     android:paddingTop="16dp"
+    android:background="@drawable/ani2_fondo"
     android:paddingRight="16dp"
-    
     android:paddingBottom="16dp"
     tools:context=".Pareja_Animales">
 
     <include
+
         layout="@layout/imagenes"
         android:layout_width="wrap_content"
         android:layout_height="500dp"
@@ -41,9 +42,4 @@
         android:textColor="#070606"
         android:textSize="32dp" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ani2_fondo" />
 </RelativeLayout>
