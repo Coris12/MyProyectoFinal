@@ -17,6 +17,7 @@ public class Menu_principal extends AppCompatActivity {
         Button botonanimales = (Button) findViewById(R.id.btnAnimales);
         Button botonabecedarion1 = (Button) findViewById(R.id.btnAlfabeto);
         Button botonnumeros = (Button) findViewById(R.id.btnNumeros);
+        Button botoncolores = (Button) findViewById(R.id.btnColores);
 
 
         botonanimales.setOnClickListener(new View.OnClickListener() {
@@ -42,6 +43,15 @@ public class Menu_principal extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intentAbecedario= new Intent (getApplicationContext(),Number_menu.class);
+                startActivity(intentAbecedario);
+                finish();
+            }
+        });
+
+        botoncolores.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentAbecedario= new Intent (getApplicationContext(),Color_menu.class);
                 startActivity(intentAbecedario);
                 finish();
             }

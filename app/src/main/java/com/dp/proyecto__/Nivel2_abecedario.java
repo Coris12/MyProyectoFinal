@@ -523,6 +523,8 @@ public class Nivel2_abecedario extends AppCompatActivity {
                     .setNegativeButton("EXIT", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
+                            Intent intent = new Intent(getApplicationContext(), Alphabet_menu.class);
+                            startActivity(intent);
                             finish();;
                         }
                     });
@@ -550,7 +552,5 @@ public class Nivel2_abecedario extends AppCompatActivity {
         image206 = R.drawable.mm;
         image207 = R.drawable.nn;
         image208 = R.drawable.oo;
-
-
     }
 }

@@ -371,16 +371,16 @@ public class nivel1Abecedario extends AppCompatActivity {
                 iv_32.getVisibility() == View.INVISIBLE &&
                 iv_33.getVisibility() == View.INVISIBLE ){
             AlertDialog.Builder alertaDialogBuilder = new AlertDialog.Builder(nivel1Abecedario.this);
-            alertaDialogBuilder.setMessage("Juego Terminado!  P1: "+puntos+   "P2: "+ puntosCPU )
-                    .setCancelable(false).setPositiveButton("Nuevo", new DialogInterface.OnClickListener() {
+            alertaDialogBuilder.setMessage("Game Over!  P1: "+puntos+   "P2: "+ puntosCPU )
+                    .setCancelable(false).setPositiveButton("New", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialogInterface, int i) {
 
                 }
-            }).setNegativeButton("Salir", new DialogInterface.OnClickListener() {
+            }).setNegativeButton("Exit", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialogInterface, int i) {
-                    Intent intent = new Intent(getApplicationContext(), nivel1Abecedario.class);
+                    Intent intent = new Intent(getApplicationContext(), Alphabet_menu.class);
                     startActivity(intent);
                     finish();
                 }
@@ -405,5 +405,4 @@ public class nivel1Abecedario extends AppCompatActivity {
         imagen206= R.drawable.ff;
     }
 }
-
 

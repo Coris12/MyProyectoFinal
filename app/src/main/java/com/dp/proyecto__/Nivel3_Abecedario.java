@@ -278,9 +278,9 @@ public class Nivel3_Abecedario extends AppCompatActivity {
         MediaPlayer mediaPlayer101 = MediaPlayer.create(this, R.raw.p);
         MediaPlayer mediaPlayer102 = MediaPlayer.create(this, R.raw.q);
         MediaPlayer mediaPlayer103 = MediaPlayer.create(this, R.raw.r);
-        MediaPlayer mediaPlayer105 = MediaPlayer.create(this, R.raw.s);
-        //MediaPlayer mediaPlayer106= MediaPlayer.create(this, R.raw.t);
-        MediaPlayer mediaPlayer104 = MediaPlayer.create(this, R.raw.u);
+        MediaPlayer mediaPlayer105 = MediaPlayer.create(this, R.raw.t);
+        MediaPlayer mediaPlayer106= MediaPlayer.create(this, R.raw.u);
+        MediaPlayer mediaPlayer104 = MediaPlayer.create(this, R.raw.s);
         MediaPlayer mediaPlayer107 = MediaPlayer.create(this, R.raw.v);
         MediaPlayer mediaPlayer108 = MediaPlayer.create(this, R.raw.w);
         MediaPlayer mediaPlayer109 = MediaPlayer.create(this, R.raw.x);
@@ -307,7 +307,7 @@ public class Nivel3_Abecedario extends AppCompatActivity {
         }
         else if (cardsArray [card] ==106){
             iv.setImageResource(image106);
-            //mediaPlayer106.start();
+            mediaPlayer106.start();
         }
         else if (cardsArray [card] ==107){
             iv.setImageResource(image107);
@@ -347,7 +347,7 @@ public class Nivel3_Abecedario extends AppCompatActivity {
         }
         else if (cardsArray [card] ==206){
             iv.setImageResource(image206);
-            //mediaPlayer106.start();
+            mediaPlayer106.start();
         }
         else if (cardsArray [card] ==207){
             iv.setImageResource(image207);
@@ -637,12 +637,13 @@ public class Nivel3_Abecedario extends AppCompatActivity {
                             Intent intent = new Intent(getApplicationContext(), Nivel3_Abecedario.class);
                             startActivity(intent);
                             finish();
-
                         }
                     })
                     .setNegativeButton("EXIT", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
+                            Intent intent = new Intent(getApplicationContext(), Alphabet_menu.class);
+                            startActivity(intent);
                             finish();;
                         }
                     });
@@ -674,7 +675,5 @@ public class Nivel3_Abecedario extends AppCompatActivity {
         image208 = R.drawable.ww;
         image209 = R.drawable.xx;
         image210 = R.drawable.yy;
-
-
     }
 }

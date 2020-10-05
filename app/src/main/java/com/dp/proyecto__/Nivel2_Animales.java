@@ -245,7 +245,7 @@ public class Nivel2_Animales extends AppCompatActivity {
             mediaPlayer103.start();
         } else if (cardsArray[card] == 104) {
             iv.setImageResource(image104);
-            MediaPlayer mediaPlayer104 = MediaPlayer.create(this, R.raw.k);
+            MediaPlayer mediaPlayer104 = MediaPlayer.create(this, R.raw.donkey);
             mediaPlayer104.start();
         } else if (cardsArray[card] == 105) {
             iv.setImageResource(image105);
