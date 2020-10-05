@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/colore_fondo"
+    android:background="@drawable/fondo_color"
     tools:context=".Color_menu">
 
     <TextView
@@ -18,10 +18,10 @@
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.468"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.063" />
+        app:layout_constraintVertical_bias="0.121" />
 
     <Button
         android:id="@+id/btn"
@@ -66,4 +66,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.68" />
+
+    <ImageButton
+        android:id="@+id/btnregresar"
+        android:layout_width="75dp"
+        android:layout_height="65dp"
+        android:background="@drawable/ovalo"
+        android:backgroundTint="@color/design_default_color_on_primary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
 </androidx.constraintlayout.widget.ConstraintLayout>
