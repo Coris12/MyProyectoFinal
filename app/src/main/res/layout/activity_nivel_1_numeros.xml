@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="406dp"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#0C0C0C"
+            android:textSize="14sp"
+            android:textStyle="normal|bold" />
+
+        <ImageView
+            android:id="@+id/ImageNumeros"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/question" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:text="Seleccione un numero"
+            android:textAlignment="center"
+            android:textColor="#0C0C0C"
+            android:textSize="27sp"
+            android:textStyle="normal|bold" />
+
+    </LinearLayout>
+
+
+    <include
+        layout="@layout/numeros"
+        android:layout_width="match_parent"
+        android:layout_height="435dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+</LinearLayout>

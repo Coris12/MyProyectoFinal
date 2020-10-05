@@ -36,7 +36,7 @@ public class Pareja_Animales extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_nivel1_abecedario);
+        setContentView(R.layout.activity_pareja__animales);
 
         ImageButton botonRegresar = (ImageButton)  findViewById(R.id.btn9);
         botonRegresar.setOnClickListener(new View.OnClickListener() {
