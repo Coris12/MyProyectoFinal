@@ -4,7 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/animales_fondo">
+    android:background="@drawable/ani_3">
+
+    <ImageButton
+        android:id="@+id/btnregresar2"
+        android:layout_width="75dp"
+        android:layout_height="65dp"
+        android:background="@drawable/ovalo"
+        android:backgroundTint="@color/design_default_color_surface"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
 
     <TextView
         android:id="@+id/textView8"
@@ -19,14 +29,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.103" />
+        app:layout_constraintVertical_bias="0.175" />
 
     <Button
         android:id="@+id/btnnivel1"
         android:layout_width="251dp"
         android:layout_height="84dp"
         android:background="@drawable/ovalo"
-        android:backgroundTint="@color/design_default_color_secondary"
+        android:backgroundTint="@color/design_default_color_surface"
         android:text="Level 1"
         android:textSize="24sp"
 
@@ -42,7 +52,7 @@
         android:layout_width="248dp"
         android:layout_height="84dp"
         android:background="@drawable/ovalo"
-        android:backgroundTint="@color/colorAccent"
+        android:backgroundTint="@color/cardview_light_background"
         android:text="Level 2"
         android:textColor="@color/design_default_color_on_secondary"
         android:textSize="24sp"
@@ -58,7 +68,7 @@
         android:layout_width="251dp"
         android:layout_height="89dp"
         android:background="@drawable/ovalo"
-        android:backgroundTint="@color/colorAccent"
+        android:backgroundTint="@color/cardview_light_background"
         android:text="Level 3"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"

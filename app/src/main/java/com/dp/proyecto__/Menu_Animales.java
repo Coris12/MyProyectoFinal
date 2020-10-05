@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class Menu_Animales extends AppCompatActivity  {
 
@@ -19,6 +20,9 @@ public class Menu_Animales extends AppCompatActivity  {
         Button nivel1 = (Button) findViewById(R.id.btnnivel1);
         Button nivel2 = (Button) findViewById(R.id.btnnivel2);
         Button nivel3 = (Button) findViewById(R.id.btnlevel3);
+
+        ImageButton botonRegresar = (ImageButton)  findViewById(R.id.btnregresar2);
+
 
 
         nivel1.setOnClickListener(new View.OnClickListener() {
@@ -43,6 +47,15 @@ public class Menu_Animales extends AppCompatActivity  {
             @Override
             public void onClick(View v) {
                 Intent intentAnimal= new Intent (getApplicationContext(),Nivel3_Animales.class);
+                startActivity(intentAnimal);
+                finish();
+            }
+        });
+
+        botonRegresar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentAnimal= new Intent (getApplicationContext(),Menu_principal.class);
                 startActivity(intentAnimal);
                 finish();
             }

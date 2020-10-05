@@ -42,6 +42,7 @@
         android:layout_height="45dp"
         android:background="@drawable/ovalo"
         android:backgroundTint="@color/cardview_light_background"
+        android:fontFamily="sans-serif-black"
         android:text="Login"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -11,6 +11,6 @@
         />
     <stroke
         android:width="10px"
-        android:color="@android:color/white"
+        android:color="@android:color/black"
         />
 </shape>
