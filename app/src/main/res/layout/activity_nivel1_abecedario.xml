@@ -5,7 +5,7 @@
     android:id="@+id/activity_nivel1_abecedario"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo_juego_abe"
+    android:background="@drawable/fondo_2"
     android:paddingLeft="16dp"
     android:paddingTop="16dp"
     android:paddingRight="16dp"
