@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Color_menu"></activity>
-        <activity android:name=".Number_menu" />
+        <activity android:name=".Number_menu" ></activity>
         <activity android:name=".Alphabet_menu" />
         <activity android:name=".Nivel3_Animales" />
         <activity android:name=".Nivel2_Animales" />

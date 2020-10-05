@@ -7,6 +7,16 @@
     tools:context=".Menu_principal"
     android:layout_height="match_parent">
 
+    <ImageButton
+        android:id="@+id/btnregresar4"
+        android:layout_width="75dp"
+        android:layout_height="65dp"
+        android:background="@drawable/ovalo"
+        android:backgroundTint="@color/design_default_color_on_primary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"

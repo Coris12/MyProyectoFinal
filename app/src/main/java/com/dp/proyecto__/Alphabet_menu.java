@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class Alphabet_menu extends AppCompatActivity {
 
@@ -17,6 +18,7 @@ public class Alphabet_menu extends AppCompatActivity {
         Button nivel1 = (Button) findViewById(R.id.btn1);
         Button nivel2 = (Button) findViewById(R.id.btn2);
         Button nivel3 = (Button) findViewById(R.id.btn3);
+        ImageButton botonRegresar = (ImageButton)  findViewById(R.id.btnregresar3);
 
 
         nivel1.setOnClickListener(new View.OnClickListener() {
@@ -47,5 +49,13 @@ public class Alphabet_menu extends AppCompatActivity {
             }
         });
 
+        botonRegresar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentAbecedario= new Intent (getApplicationContext(),Menu_principal.class);
+                startActivity(intentAbecedario);
+                finish();
+            }
+        });
     }}
 
