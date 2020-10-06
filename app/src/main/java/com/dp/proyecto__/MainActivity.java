@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         btnIniciar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intentMenuP = new Intent(getApplicationContext(), Menu_principal.class);
+                Intent intentMenuP = new Intent(getApplicationContext(),Intrucciones_Generales.class);
                 startActivity(intentMenuP);
             }
         });

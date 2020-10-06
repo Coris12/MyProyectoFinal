@@ -61,7 +61,7 @@ public class Menu_principal extends AppCompatActivity {
         regresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intentAnimales= new Intent (getApplicationContext(), Menu_Animales.class);
+                Intent intentAnimales= new Intent (getApplicationContext(), Intrucciones_Generales.class);
                 startActivity(intentAnimales);
                 finish();
 

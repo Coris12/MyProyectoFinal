@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -27,6 +28,13 @@ public class Nivel_1_numeros extends AppCompatActivity {
         final MediaPlayer mediaPlayersiete = MediaPlayer.create(this, R.raw.siete);
         final MediaPlayer mediaPlayerocho = MediaPlayer.create(this, R.raw.ocho);
         final MediaPlayer mediaPlayernueve = MediaPlayer.create(this, R.raw.nueve);
+        final TextView texto=(TextView) findViewById(R.id.tex_num);
+        texto.setText("CERO");
+        texto.setText("one");
+        texto.setText("CERO");
+        texto.setText("CERO");
+        texto.setText("CERO");
+        texto.setText("CERO");
 
         ImageView btncero=(ImageView) findViewById(R.id.num_cero);
         ImageView btnuno=(ImageView) findViewById(R.id.num_uno);
