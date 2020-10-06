@@ -10,10 +10,13 @@
         android:orientation="vertical">
 
         <Button
-            android:layout_width="36dp"
-            android:layout_height="36dp"
+            android:id="@+id/button"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="12dp"
             android:layout_marginTop="12dp"
+            android:background="?attr/actionModeCloseDrawable"
+            android:backgroundTint="@color/design_default_color_error"
             android:text=""
             android:textAlignment="center"
             android:textColor="#0C0C0C"
