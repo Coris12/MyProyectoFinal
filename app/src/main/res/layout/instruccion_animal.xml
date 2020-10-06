@@ -10,11 +10,10 @@
 
     <pl.droidsonroids.gif.GifImageView
         android:layout_width="316dp"
-        android:layout_height="464dp"
-        android:layout_marginTop="100dp"
+        android:layout_height="504dp"
         android:layout_marginLeft="50dp"
-        android:src="@drawable/instrucciones_animales"
-        />
+        android:layout_marginTop="100dp"
+        android:src="@drawable/instrucciones_animales" />
 
     <Button
         android:id="@+id/btngif"
