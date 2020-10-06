@@ -5,6 +5,7 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -17,6 +18,15 @@ public class Nivel_1_numeros extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nivel_1_numeros);
 
+        Button botonRegresar = (Button)  findViewById(R.id.button);
+        botonRegresar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentAnimal= new Intent (getApplicationContext(),Number_menu.class);
+                startActivity(intentAnimal);
+                finish();
+            }
+        });
 
         final MediaPlayer mediaPlayercero = MediaPlayer.create(this, R.raw.cero);
         final MediaPlayer mediaPlayeruno = MediaPlayer.create(this, R.raw.uno);
@@ -29,14 +39,11 @@ public class Nivel_1_numeros extends AppCompatActivity {
         final MediaPlayer mediaPlayerocho = MediaPlayer.create(this, R.raw.ocho);
         final MediaPlayer mediaPlayernueve = MediaPlayer.create(this, R.raw.nueve);
         final TextView texto=(TextView) findViewById(R.id.tex_num);
-        texto.setText("CERO");
-        texto.setText("one");
-        texto.setText("CERO");
-        texto.setText("CERO");
-        texto.setText("CERO");
-        texto.setText("CERO");
+
+
 
         ImageView btncero=(ImageView) findViewById(R.id.num_cero);
+
         ImageView btnuno=(ImageView) findViewById(R.id.num_uno);
         ImageView btndos=(ImageView) findViewById(R.id.num_dos);
         ImageView btntres=(ImageView) findViewById(R.id.num_tres);
@@ -53,6 +60,7 @@ public class Nivel_1_numeros extends AppCompatActivity {
                 ImageView imagen=(ImageView)findViewById(R.id.ImageNumeros);
                 imagen.setImageResource(R.drawable.ceropeces);
                 mediaPlayercero.start();
+                texto.setText("CERO");
 
             }
         });
@@ -62,6 +70,8 @@ public class Nivel_1_numeros extends AppCompatActivity {
                 ImageView imagen=(ImageView)findViewById(R.id.ImageNumeros);
                 imagen.setImageResource(R.drawable.unpez);
                 mediaPlayeruno.start();
+                texto.setText("ONE");
+
 
             }
         });
@@ -71,6 +81,8 @@ public class Nivel_1_numeros extends AppCompatActivity {
                 ImageView imagen=(ImageView)findViewById(R.id.ImageNumeros);
                 imagen.setImageResource(R.drawable.dospeces);
                 mediaPlayerdos.start();
+                texto.setText("TWO");
+
 
             }
         });
@@ -80,6 +92,7 @@ public class Nivel_1_numeros extends AppCompatActivity {
                 ImageView imagen=(ImageView)findViewById(R.id.ImageNumeros);
                 imagen.setImageResource(R.drawable.trespeces);
                 mediaPlayertres.start();
+                texto.setText("THREE");
 
             }
         });
@@ -89,6 +102,7 @@ public class Nivel_1_numeros extends AppCompatActivity {
                 ImageView imagen=(ImageView)findViewById(R.id.ImageNumeros);
                 imagen.setImageResource(R.drawable.cuatropeces);
                 mediaPlayercuatro.start();
+                texto.setText("FOUR");
 
             }
         });
@@ -98,6 +112,7 @@ public class Nivel_1_numeros extends AppCompatActivity {
                 ImageView imagen=(ImageView)findViewById(R.id.ImageNumeros);
                 imagen.setImageResource(R.drawable.cincopeces);
                 mediaPlayercinco.start();
+                texto.setText("FIVE");
 
             }
         });btnseis.setOnClickListener(new View.OnClickListener() {
@@ -106,6 +121,7 @@ public class Nivel_1_numeros extends AppCompatActivity {
                 ImageView imagen=(ImageView)findViewById(R.id.ImageNumeros);
                 imagen.setImageResource(R.drawable.seispeces);
                 mediaPlayerseis.start();
+                texto.setText("SIX");
 
             }
         });
@@ -115,6 +131,7 @@ public class Nivel_1_numeros extends AppCompatActivity {
                 ImageView imagen=(ImageView)findViewById(R.id.ImageNumeros);
                 imagen.setImageResource(R.drawable.sietepeces);
                 mediaPlayersiete.start();
+                texto.setText("SEVEN");
 
             }
         });
@@ -124,6 +141,7 @@ public class Nivel_1_numeros extends AppCompatActivity {
                 ImageView imagen=(ImageView)findViewById(R.id.ImageNumeros);
                 imagen.setImageResource(R.drawable.ochopeces);
                 mediaPlayerocho.start();
+                texto.setText("EIGHT");
             }
         });
         btnnueve.setOnClickListener(new View.OnClickListener() {
@@ -132,6 +150,8 @@ public class Nivel_1_numeros extends AppCompatActivity {
                 ImageView imagen=(ImageView)findViewById(R.id.ImageNumeros);
                 imagen.setImageResource(R.drawable.nuevepeces);
                 mediaPlayernueve.start();
+                texto.setText("NINE");
+
             }
         });
 

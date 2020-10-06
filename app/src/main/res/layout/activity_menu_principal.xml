@@ -10,13 +10,12 @@
 
     <ImageButton
         android:id="@+id/btnregresar4"
-        android:layout_width="75dp"
-        android:layout_height="65dp"
-        android:background="@drawable/ovalo"
-        android:backgroundTint="@color/design_default_color_on_primary"
+        android:layout_width="84dp"
+        android:layout_height="76dp"
+        android:background="@android:drawable/ic_delete"
+        android:backgroundTint="@color/design_default_color_error"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="?attr/actionModeCloseDrawable" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView3"
