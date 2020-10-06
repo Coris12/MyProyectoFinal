@@ -24,7 +24,7 @@ public class Menu_principal extends AppCompatActivity {
         botonanimales.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intentAnimales= new Intent (getApplicationContext(), Menu_Animales.class);
+                Intent intentAnimales= new Intent (getApplicationContext(), Instruccione_animales.class);
                 startActivity(intentAnimales);
                 finish();
 
