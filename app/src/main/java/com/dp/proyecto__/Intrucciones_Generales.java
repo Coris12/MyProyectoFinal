@@ -13,18 +13,18 @@ public class Intrucciones_Generales extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        /*setContentView(R.layout.instruccon_general);*/
+        setContentView(R.layout.instruccio_general);
+        ImageButton siguente=(ImageButton) findViewById(R.id.button);
 
-       /* Button siguiente =(ImageButton) findViewById(R.id.btnL) ;*/
-
-       /* siguiente.setOnClickListener(new View.OnClickListener() {
+        siguente.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intentAnimales= new Intent (getApplicationContext(), Menu_principal.class);
                 startActivity(intentAnimales);
-                finish();*/
+                finish();
 
-            /*}
-        });*/
+            }
+        });
+
     }
 }
