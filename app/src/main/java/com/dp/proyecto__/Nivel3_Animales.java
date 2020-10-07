@@ -43,6 +43,7 @@ public class Nivel3_Animales extends AppCompatActivity {
         setContentView(R.layout.activity_nivel_tres_abecedario);
 
         ImageButton botonRegresar = (ImageButton)  findViewById(R.id.btn10);
+
         botonRegresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

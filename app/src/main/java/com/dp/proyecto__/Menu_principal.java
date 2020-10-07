@@ -43,7 +43,7 @@ public class Menu_principal extends AppCompatActivity {
         botonnumeros.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentAbecedario= new Intent (getApplicationContext(),Number_menu.class);
+                Intent intentAbecedario= new Intent (getApplicationContext(),Instruccione_number.class);
                 startActivity(intentAbecedario);
                 finish();
             }

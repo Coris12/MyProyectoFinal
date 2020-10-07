@@ -38,12 +38,8 @@ public class Nivel2_Animales extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_nivel2_abecedario);
-
-        tv_p1 =(TextView) findViewById(R.id.tv_p1);
-        tv_p2 =(TextView) findViewById(R.id.tv_p2);
-
-        ImageButton botonRegresar = (ImageButton)  findViewById(R.id.btn11);
+        setContentView(R.layout.activity_nivel2_animales);
+        ImageButton botonRegresar = (ImageButton)  findViewById(R.id.butre);
         botonRegresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -52,6 +48,9 @@ public class Nivel2_Animales extends AppCompatActivity {
                 finish();
             }
         });
+
+        tv_p1 =(TextView) findViewById(R.id.tv_p1);
+        tv_p2 =(TextView) findViewById(R.id.tv_p2);
 
         iv_11 =(ImageView) findViewById(R.id.iv_11);
         iv_12 =(ImageView) findViewById(R.id.iv_12);
@@ -245,67 +244,67 @@ public class Nivel2_Animales extends AppCompatActivity {
         //establecer la imagen correcta en la vista de imagen
         if (cardsArray[card] == 101) {
             iv.setImageResource(image101);
-            MediaPlayer mediaPlayer101 = MediaPlayer.create(this, R.raw.cat);
+            MediaPlayer mediaPlayer101 = MediaPlayer.create(this, R.raw.h);
             mediaPlayer101.start();
         } else if (cardsArray[card] == 102) {
             iv.setImageResource(image102);
-            MediaPlayer mediaPlayer102 = MediaPlayer.create(this, R.raw.chicken);
+            MediaPlayer mediaPlayer102 = MediaPlayer.create(this, R.raw.i);
             mediaPlayer102.start();
         } else if (cardsArray[card] == 103) {
             iv.setImageResource(image103);
-            MediaPlayer mediaPlayer103 = MediaPlayer.create(this, R.raw.cow);
+            MediaPlayer mediaPlayer103 = MediaPlayer.create(this, R.raw.j);
             mediaPlayer103.start();
         } else if (cardsArray[card] == 104) {
             iv.setImageResource(image104);
-            MediaPlayer mediaPlayer104 = MediaPlayer.create(this, R.raw.donkey);
+            MediaPlayer mediaPlayer104 = MediaPlayer.create(this, R.raw.k);
             mediaPlayer104.start();
         } else if (cardsArray[card] == 105) {
             iv.setImageResource(image105);
-            MediaPlayer mediaPlayer105 = MediaPlayer.create(this, R.raw.pig);
+            MediaPlayer mediaPlayer105 = MediaPlayer.create(this, R.raw.l);
             mediaPlayer105.start();
         } else if (cardsArray[card] == 106) {
             iv.setImageResource(image106);
-            MediaPlayer mediaPlayer106 = MediaPlayer.create(this, R.raw.sheep);
+            MediaPlayer mediaPlayer106 = MediaPlayer.create(this, R.raw.m);
             mediaPlayer106.start();
         } else if (cardsArray[card] == 107) {
             iv.setImageResource(image107);
-            MediaPlayer mediaPlayer107 = MediaPlayer.create(this, R.raw.frog);
+            MediaPlayer mediaPlayer107 = MediaPlayer.create(this, R.raw.n);
             mediaPlayer107.start();
         } else if (cardsArray[card] == 108) {
             iv.setImageResource(image108);
-            MediaPlayer mediaPlayer108 = MediaPlayer.create(this, R.raw.shark);
+            MediaPlayer mediaPlayer108 = MediaPlayer.create(this, R.raw.o);
             mediaPlayer108.start();
         } else if (cardsArray[card] == 201) {
             iv.setImageResource(image201);
-            MediaPlayer mediaPlayer201 = MediaPlayer.create(this, R.raw.cat);
+            MediaPlayer mediaPlayer201 = MediaPlayer.create(this, R.raw.h);
             mediaPlayer201.start();
         } else if (cardsArray[card] == 202) {
             iv.setImageResource(image202);
-            MediaPlayer mediaPlayer202 = MediaPlayer.create(this, R.raw.chicken);
+            MediaPlayer mediaPlayer202 = MediaPlayer.create(this, R.raw.i);
             mediaPlayer202.start();
         } else if (cardsArray[card] == 203) {
             iv.setImageResource(image203);
-            MediaPlayer mediaPlayer203 = MediaPlayer.create(this, R.raw.cow);
+            MediaPlayer mediaPlayer203 = MediaPlayer.create(this, R.raw.j);
             mediaPlayer203.start();
         } else if (cardsArray[card] == 204) {
             iv.setImageResource(image204);
-            MediaPlayer mediaPlayer204 = MediaPlayer.create(this, R.raw.donkey);
+            MediaPlayer mediaPlayer204 = MediaPlayer.create(this, R.raw.k);
             mediaPlayer204.start();
         } else if (cardsArray[card] == 205) {
             iv.setImageResource(image205);
-            MediaPlayer mediaPlayer205 = MediaPlayer.create(this, R.raw.pig);
+            MediaPlayer mediaPlayer205 = MediaPlayer.create(this, R.raw.l);
             mediaPlayer205.start();
         } else if (cardsArray[card] == 206) {
             iv.setImageResource(image206);
-            MediaPlayer mediaPlayer206 = MediaPlayer.create(this, R.raw.sheep);
+            MediaPlayer mediaPlayer206 = MediaPlayer.create(this, R.raw.m);
             mediaPlayer206.start();
         } else if (cardsArray[card] == 207) {
             iv.setImageResource(image207);
-            MediaPlayer mediaPlayer207 = MediaPlayer.create(this, R.raw.frog);
+            MediaPlayer mediaPlayer207 = MediaPlayer.create(this, R.raw.n);
             mediaPlayer207.start();
         } else if (cardsArray[card] == 208) {
             iv.setImageResource(image208);
-            MediaPlayer mediaPlayer208 = MediaPlayer.create(this, R.raw.shark);
+            MediaPlayer mediaPlayer208 = MediaPlayer.create(this, R.raw.o);
             mediaPlayer208.start();
         }
 
@@ -535,6 +534,8 @@ public class Nivel2_Animales extends AppCompatActivity {
                     .setNegativeButton("EXIT", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
+                            Intent intent = new Intent(getApplicationContext(), Menu_Animales.class);
+                            startActivity(intent);
                             finish();;
                         }
                     });
