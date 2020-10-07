@@ -40,11 +40,11 @@ public class Nivel3_Animales extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_nivel_tres_abecedario);
+        setContentView(R.layout.activity_nivel3_animales);
 
-        ImageButton botonRegresar = (ImageButton)  findViewById(R.id.btn10);
+        ImageButton Regresar = (ImageButton)  findViewById(R.id.Btnre);
 
-        botonRegresar.setOnClickListener(new View.OnClickListener() {
+        Regresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intentAnimal= new Intent (getApplicationContext(),Menu_Animales.class);
@@ -52,7 +52,6 @@ public class Nivel3_Animales extends AppCompatActivity {
                 finish();
             }
         });
-
 
         tv_p1 =(TextView) findViewById(R.id.tv_p1);
         tv_p2 =(TextView) findViewById(R.id.tv_p2);
@@ -289,16 +288,16 @@ public class Nivel3_Animales extends AppCompatActivity {
     }
 
     private void doStuff(ImageView iv, int card){
-        MediaPlayer mediaPlayer101 = MediaPlayer.create(this, R.raw.p);
-        MediaPlayer mediaPlayer102 = MediaPlayer.create(this, R.raw.q);
-        MediaPlayer mediaPlayer103 = MediaPlayer.create(this, R.raw.r);
-        MediaPlayer mediaPlayer105 = MediaPlayer.create(this, R.raw.s);
-        //MediaPlayer mediaPlayer106= MediaPlayer.create(this, R.raw.t);
-        MediaPlayer mediaPlayer104 = MediaPlayer.create(this, R.raw.u);
-        MediaPlayer mediaPlayer107 = MediaPlayer.create(this, R.raw.v);
-        MediaPlayer mediaPlayer108 = MediaPlayer.create(this, R.raw.w);
-        MediaPlayer mediaPlayer109 = MediaPlayer.create(this, R.raw.x);
-        MediaPlayer mediaPlayer110 = MediaPlayer.create(this, R.raw.y);
+        MediaPlayer mediaPlayer101 = MediaPlayer.create(this, R.raw.cat);
+        MediaPlayer mediaPlayer102 = MediaPlayer.create(this, R.raw.chicken);
+        MediaPlayer mediaPlayer103 = MediaPlayer.create(this, R.raw.cow);
+        MediaPlayer mediaPlayer105 = MediaPlayer.create(this, R.raw.donkey);
+        MediaPlayer mediaPlayer106= MediaPlayer.create(this, R.raw.pig);
+        MediaPlayer mediaPlayer104 = MediaPlayer.create(this, R.raw.sheep);
+        MediaPlayer mediaPlayer107 = MediaPlayer.create(this, R.raw.frog);
+        MediaPlayer mediaPlayer108 = MediaPlayer.create(this, R.raw.shark);
+        MediaPlayer mediaPlayer109 = MediaPlayer.create(this, R.raw.dog);
+        MediaPlayer mediaPlayer110 = MediaPlayer.create(this, R.raw.turtle);
         //establecer la imagen correcta en la vista de imagen
         if (cardsArray[card] ==101){
             iv.setImageResource(image101);
@@ -321,7 +320,7 @@ public class Nivel3_Animales extends AppCompatActivity {
         }
         else if (cardsArray [card] ==106){
             iv.setImageResource(image106);
-            //mediaPlayer106.start();
+            mediaPlayer106.start();
         }
         else if (cardsArray [card] ==107){
             iv.setImageResource(image107);
@@ -361,7 +360,7 @@ public class Nivel3_Animales extends AppCompatActivity {
         }
         else if (cardsArray [card] ==206){
             iv.setImageResource(image206);
-            //mediaPlayer106.start();
+            mediaPlayer106.start();
         }
         else if (cardsArray [card] ==207){
             iv.setImageResource(image207);
@@ -651,12 +650,13 @@ public class Nivel3_Animales extends AppCompatActivity {
                             Intent intent = new Intent(getApplicationContext(), Nivel3_Animales.class);
                             startActivity(intent);
                             finish();
-
                         }
                     })
                     .setNegativeButton("EXIT", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
+                            Intent intent = new Intent(getApplicationContext(), Menu_Animales.class);
+                            startActivity(intent);
                             finish();;
                         }
                     });
@@ -666,7 +666,6 @@ public class Nivel3_Animales extends AppCompatActivity {
 
         }
     }
-
     private void frontOfCardsResuorse(){
         image101 = R.drawable.cat_1;
         image102 = R.drawable.chicken_1;

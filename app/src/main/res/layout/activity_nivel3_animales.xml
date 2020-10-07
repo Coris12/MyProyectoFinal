@@ -12,16 +12,6 @@
     android:paddingBottom="16dp"
     tools:context=".Nivel3_Animales">
 
-    <ImageButton
-        android:id="@+id/btn10"
-        android:layout_width="59dp"
-        android:layout_height="70dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/ovalo"
-        android:backgroundTint="@color/colorAccent"
-        app:srcCompat="?attr/homeAsUpIndicator" />
-
     <include
         layout="@layout/imagenes3animales"
         android:layout_width="wrap_content"
@@ -60,6 +50,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView" />
+
+    <ImageButton
+        android:id="@+id/Btnre"
+        android:layout_width="68dp"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/ovalo"
+        android:backgroundTint="@color/colorAccent"
+        app:srcCompat="?attr/homeAsUpIndicator" />
 
 
 </RelativeLayout>
