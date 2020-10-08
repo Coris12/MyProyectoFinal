@@ -1,12 +1,11 @@
 package com.dp.proyecto__;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Color_menu extends AppCompatActivity {
 
@@ -15,13 +14,15 @@ public class Color_menu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_color_menu);
 
-        ImageButton botonRegresar = (ImageButton)  findViewById(R.id.btnregresar);
-        botonRegresar.setOnClickListener(new View.OnClickListener() {
+        Button nivel1=(Button)findViewById(R.id.btn);
+
+        nivel1.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                Intent intentRegresar = new Intent(getApplicationContext(),Menu_principal.class);
-                startActivity(intentRegresar);
+            public void onClick(View view) {
+                Intent intentAnimales= new Intent (getApplicationContext(), Nivel1_colores.class);
+                startActivity(intentAnimales);
                 finish();
+
             }
         });
     }

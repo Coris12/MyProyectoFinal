@@ -9,10 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Instruccione_number"></activity>
+        <activity android:name=".Instruccione_number" />
         <activity android:name=".Instruccion_abecedario" />
         <activity android:name=".Color_menu" />
         <activity android:name=".Number_menu" />
+        <activity android:name=".Nivel1_colores" />
         <activity android:name=".Intrucciones_Generales" />
         <activity android:name=".Instruccione_animales" />
         <activity android:name=".Alphabet_menu" />
