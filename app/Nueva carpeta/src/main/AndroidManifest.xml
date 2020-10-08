@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dp.proyecto__">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="LT"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Color_menu" />
+        <activity android:name=".Number_menu" />
+        <activity android:name=".Intrucciones_Generales" />
+        <activity android:name=".Instruccione_animales" />
+        <activity android:name=".Alphabet_menu" />
+        <activity android:name=".Nivel3_Animales" />
+        <activity android:name=".Nivel2_Animales" />
+        <activity android:name=".Nivel3_Abecedario" />
+        <activity android:name=".Nivel2_abecedario" />
+        <activity android:name=".Nivel_1_numeros" />
+        <activity android:name=".nivel1Abecedario" />
+        <activity android:name=".Menu_principal" />
+        <activity android:name=".Pareja_Animales" />
+        <activity android:name=".Menu_Animales" />
+        <activity android:name=".Registro" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
