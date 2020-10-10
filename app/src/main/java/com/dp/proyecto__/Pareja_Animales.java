@@ -31,7 +31,7 @@ public class Pareja_Animales extends AppCompatActivity {
     int primeClick, segundoClick;
     int NumeroTarjeta= 1;
     int turn= 1;
-    int puntosCPU=0 , puntos= 0;
+    int playerPoints = 0, cpuPoints = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -406,11 +406,11 @@ public class Pareja_Animales extends AppCompatActivity {
                 iv_43.setVisibility(View.INVISIBLE);
             }
             if(turn ==1){
-                puntos++;
-                tv_p1.setText("P1: "+puntos);
+                playerPoints++;
+                tv_p1.setText("P1: "+playerPoints);
             }else if(turn ==2){
-                puntosCPU++;
-                tv_p1.setText("P2: "+puntosCPU);
+                cpuPoints++;
+                tv_p1.setText("P2: "+cpuPoints);
             }}else {
             iv_11.setImageResource(R.drawable.question);
             iv_12.setImageResource(R.drawable.question);
@@ -465,23 +465,28 @@ public class Pareja_Animales extends AppCompatActivity {
                 iv_31.getVisibility() == View.INVISIBLE &&
                 iv_32.getVisibility() == View.INVISIBLE &&
                 iv_33.getVisibility() == View.INVISIBLE ){
-            AlertDialog.Builder alertaDialogBuilder = new AlertDialog.Builder(Pareja_Animales.this);
-            alertaDialogBuilder.setMessage("Juego Terminado!  P1: "+puntos+   "P2: "+ puntosCPU )
-                    .setCancelable(false).setPositiveButton("Nuevo", new DialogInterface.OnClickListener() {
 
-                @Override
-                public void onClick(DialogInterface dialogInterface, int i) {
-
-                }
-            }).setNegativeButton("Salir", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialogInterface, int i) {
-                    Intent intent = new Intent(getApplicationContext(), Menu_Animales.class);
-                    startActivity(intent);
-                    finish();
-                }
-            });
-            AlertDialog alertDialog = alertaDialogBuilder.create();
+            AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(Pareja_Animales.this);
+            alertDialogBuilder
+                    .setMessage("GAME OVER!\nP1: " + playerPoints + "\nP2: " + cpuPoints)
+                    .setCancelable(false)
+                    .setPositiveButton("NEW", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            Intent intent = new Intent(getApplicationContext(), Nivel3_Animales.class);
+                            startActivity(intent);
+                            finish();
+                        }
+                    })
+                    .setNegativeButton("EXIT", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            Intent intent = new Intent(getApplicationContext(), Menu_Animales.class);
+                            startActivity(intent);
+                            finish();;
+                        }
+                    });
+            AlertDialog alertDialog = alertDialogBuilder.create();
             alertDialog.show();
         }
     }

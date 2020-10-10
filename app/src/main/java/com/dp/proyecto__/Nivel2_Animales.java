@@ -616,7 +616,7 @@ public class Nivel2_Animales extends AppCompatActivity {
                 iv_44.getVisibility() ==View.INVISIBLE){
             AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(Nivel2_Animales.this);
             alertDialogBuilder
-                    .setMessage("GAMe OVER!\nP1: " + playerPoints + "\nP2: " + cpuPoints)
+                    .setMessage("GAME OVER!\nP1: " + playerPoints + "\nP2: " + cpuPoints)
                     .setCancelable(false)
                     .setPositiveButton("NEW", new DialogInterface.OnClickListener() {
                         @Override

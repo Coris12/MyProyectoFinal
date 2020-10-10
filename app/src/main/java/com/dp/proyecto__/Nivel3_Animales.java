@@ -290,14 +290,6 @@ public class Nivel3_Animales extends AppCompatActivity {
     private void doStuff(ImageView iv, int card){
 
 
-
-        MediaPlayer mediaPlayer105 = MediaPlayer.create(this, R.raw.donkey);
-        MediaPlayer mediaPlayer106= MediaPlayer.create(this, R.raw.pig);
-
-        MediaPlayer mediaPlayer107 = MediaPlayer.create(this, R.raw.frog);
-        MediaPlayer mediaPlayer108 = MediaPlayer.create(this, R.raw.shark);
-        MediaPlayer mediaPlayer109 = MediaPlayer.create(this, R.raw.dog);
-        MediaPlayer mediaPlayer110 = MediaPlayer.create(this, R.raw.turtle);
         //establecer la imagen correcta en la vista de imagen
         if (cardsArray[card] ==101){
             iv.setImageResource(image101);
@@ -344,67 +336,181 @@ public class Nivel3_Animales extends AppCompatActivity {
         }
         else if (cardsArray [card] ==105){
             iv.setImageResource(image105);
+            final MediaPlayer mediaPlayer105 = MediaPlayer.create(this, R.raw.pig);
             mediaPlayer105.start();
+            mediaPlayer105.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                @Override
+                public void onCompletion(MediaPlayer mp) {
+                    mediaPlayer105.release();
+                }
+            });
         }
         else if (cardsArray [card] ==106){
             iv.setImageResource(image106);
+            final MediaPlayer mediaPlayer106= MediaPlayer.create(this, R.raw.sheep);
             mediaPlayer106.start();
+            mediaPlayer106.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                @Override
+                public void onCompletion(MediaPlayer mp) {
+                    mediaPlayer106.release();
+                }
+            });
         }
         else if (cardsArray [card] ==107){
             iv.setImageResource(image107);
+            final MediaPlayer mediaPlayer107 = MediaPlayer.create(this, R.raw.frog);
             mediaPlayer107.start();
+            mediaPlayer107.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                @Override
+                public void onCompletion(MediaPlayer mp) {
+                    mediaPlayer107.release();
+                }
+            });
         }
         else if (cardsArray [card] ==108){
             iv.setImageResource(image108);
+            final  MediaPlayer mediaPlayer108 = MediaPlayer.create(this, R.raw.shark);
             mediaPlayer108.start();
+            mediaPlayer108.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                @Override
+                public void onCompletion(MediaPlayer mp) {
+                    mediaPlayer108.release();
+                }
+            });
+
         }
         else if (cardsArray [card] ==109){
             iv.setImageResource(image109);
+            final   MediaPlayer mediaPlayer109 = MediaPlayer.create(this, R.raw.dog);
             mediaPlayer109.start();
+            mediaPlayer109.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                @Override
+                public void onCompletion(MediaPlayer mp) {
+                    mediaPlayer109.release();
+                }
+            });
         }
         else if (cardsArray [card] ==110){
             iv.setImageResource(image110);
+            final MediaPlayer mediaPlayer110 = MediaPlayer.create(this, R.raw.pig);
             mediaPlayer110.start();
+            mediaPlayer110.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                @Override
+                public void onCompletion(MediaPlayer mp) {
+                    mediaPlayer110.release();
+                }
+            });
         }
         else if (cardsArray [card] ==201){
             iv.setImageResource(image201);
+            final MediaPlayer mediaPlayer101 = MediaPlayer.create(this, R.raw.cat);
             mediaPlayer101.start();
+            mediaPlayer101.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                @Override
+                public void onCompletion(MediaPlayer mp) {
+                    mediaPlayer101.release();
+                }
+            });
         }
         else if (cardsArray [card] ==202){
             iv.setImageResource(image202);
+            final MediaPlayer mediaPlayer102 = MediaPlayer.create(this, R.raw.chicken);
             mediaPlayer102.start();
+            mediaPlayer102.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                @Override
+                public void onCompletion(MediaPlayer mp) {
+                    mediaPlayer102.release();
+                }
+            });
         }
         else if (cardsArray [card] ==203){
             iv.setImageResource(image203);
+            final MediaPlayer mediaPlayer103 = MediaPlayer.create(this, R.raw.cow);
             mediaPlayer103.start();
+            mediaPlayer103.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                @Override
+                public void onCompletion(MediaPlayer mp) {
+                    mediaPlayer103.release();
+                }
+            });
         }
         else if (cardsArray [card] ==204){
             iv.setImageResource(image204);
+            final MediaPlayer mediaPlayer104 = MediaPlayer.create(this, R.raw.donkey);
             mediaPlayer104.start();
+            mediaPlayer104.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                @Override
+                public void onCompletion(MediaPlayer mp) {
+                    mediaPlayer104.release();
+                }
+            });
         }
         else if (cardsArray [card] ==205){
             iv.setImageResource(image205);
+            final MediaPlayer mediaPlayer105 = MediaPlayer.create(this, R.raw.pig);
             mediaPlayer105.start();
+            mediaPlayer105.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                @Override
+                public void onCompletion(MediaPlayer mp) {
+                    mediaPlayer105.release();
+                }
+            });
         }
         else if (cardsArray [card] ==206){
             iv.setImageResource(image206);
+            final MediaPlayer mediaPlayer106= MediaPlayer.create(this, R.raw.sheep);
             mediaPlayer106.start();
+            mediaPlayer106.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                @Override
+                public void onCompletion(MediaPlayer mp) {
+                    mediaPlayer106.release();
+                }
+            });
         }
         else if (cardsArray [card] ==207){
             iv.setImageResource(image207);
+            final MediaPlayer mediaPlayer107 = MediaPlayer.create(this, R.raw.frog);
             mediaPlayer107.start();
+            mediaPlayer107.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                @Override
+                public void onCompletion(MediaPlayer mp) {
+                    mediaPlayer107.release();
+                }
+            });
         }
+
         else if (cardsArray [card] ==208){
             iv.setImageResource(image208);
+            final  MediaPlayer mediaPlayer108 = MediaPlayer.create(this, R.raw.shark);
             mediaPlayer108.start();
+            mediaPlayer108.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                @Override
+                public void onCompletion(MediaPlayer mp) {
+                    mediaPlayer108.release();
+                }
+            });;
         }
         else if (cardsArray [card] ==209){
             iv.setImageResource(image209);
+            final   MediaPlayer mediaPlayer109 = MediaPlayer.create(this, R.raw.dog);
             mediaPlayer109.start();
+            mediaPlayer109.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                @Override
+                public void onCompletion(MediaPlayer mp) {
+                    mediaPlayer109.release();
+                }
+            });
         }
         else if (cardsArray [card] ==210){
             iv.setImageResource(image210);
+            final MediaPlayer mediaPlayer110 = MediaPlayer.create(this, R.raw.pig);
             mediaPlayer110.start();
+            mediaPlayer110.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                @Override
+                public void onCompletion(MediaPlayer mp) {
+                    mediaPlayer110.release();
+                }
+            });
         }
 
         //revisar que imagen es seleccionada y guardae
@@ -670,7 +776,7 @@ public class Nivel3_Animales extends AppCompatActivity {
                 iv_54.getVisibility() ==View.INVISIBLE){
             AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(Nivel3_Animales.this);
             alertDialogBuilder
-                    .setMessage("GAMe OVER!\nP1: " + playerPoints + "\nP2: " + cpuPoints)
+                    .setMessage("GAME OVER!\nP1: " + playerPoints + "\nP2: " + cpuPoints)
                     .setCancelable(false)
                     .setPositiveButton("NEW", new DialogInterface.OnClickListener() {
                         @Override
@@ -714,7 +820,7 @@ public class Nivel3_Animales extends AppCompatActivity {
         image207 = R.drawable.frog_2;
         image208 = R.drawable.shark_2;
         image209 = R.drawable.dog_2;
-        image210 = R.drawable.frog_2;
+        image210 = R.drawable.turtle_2;
 
 
     }

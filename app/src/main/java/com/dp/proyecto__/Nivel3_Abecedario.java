@@ -770,7 +770,7 @@ public class Nivel3_Abecedario extends AppCompatActivity {
                 iv_54.getVisibility() ==View.INVISIBLE){
             AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(Nivel3_Abecedario.this);
             alertDialogBuilder
-                    .setMessage("GAMe OVER!\nP1: " + playerPoints + "\nP2: " + cpuPoints)
+                    .setMessage("GAME OVER!\nP1: " + playerPoints + "\nP2: " + cpuPoints)
                     .setCancelable(false)
                     .setPositiveButton("NEW", new DialogInterface.OnClickListener() {
                         @Override
