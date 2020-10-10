@@ -333,8 +333,14 @@ public class Nivel3_Animales extends AppCompatActivity {
         }
         else if (cardsArray [card] ==104){
             iv.setImageResource(image104);
-            final
+            final MediaPlayer mediaPlayer104 = MediaPlayer.create(this, R.raw.donkey);
             mediaPlayer104.start();
+            mediaPlayer104.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                @Override
+                public void onCompletion(MediaPlayer mp) {
+                    mediaPlayer104.release();
+                }
+            });
         }
         else if (cardsArray [card] ==105){
             iv.setImageResource(image105);
