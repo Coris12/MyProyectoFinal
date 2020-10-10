@@ -80,6 +80,7 @@
         android:layout_width="165dp"
         android:layout_height="47dp"
         android:layout_marginTop="36dp"
+        android:fontFamily="sans-serif-black"
         android:text="Instructions"
         android:textColor="@android:color/black"
         android:textSize="28dp"

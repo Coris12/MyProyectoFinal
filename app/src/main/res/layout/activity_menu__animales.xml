@@ -12,6 +12,7 @@
         android:layout_height="65dp"
         android:background="@drawable/ovalo"
         android:backgroundTint="@color/design_default_color_surface"
+        android:tint="@color/design_default_color_on_secondary"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="?attr/actionModeCloseDrawable" />
@@ -37,6 +38,7 @@
         android:layout_height="84dp"
         android:background="@drawable/ovalo"
         android:backgroundTint="@color/design_default_color_surface"
+        android:fontFamily="sans-serif-black"
         android:text="Level 1"
         android:textSize="24sp"
 
@@ -53,6 +55,7 @@
         android:layout_height="84dp"
         android:background="@drawable/ovalo"
         android:backgroundTint="@color/cardview_light_background"
+        android:fontFamily="sans-serif-black"
         android:text="Level 2"
         android:textColor="@color/design_default_color_on_secondary"
         android:textSize="24sp"
@@ -69,6 +72,7 @@
         android:layout_height="89dp"
         android:background="@drawable/ovalo"
         android:backgroundTint="@color/cardview_light_background"
+        android:fontFamily="sans-serif-black"
         android:text="Level 3"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
