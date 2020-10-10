@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_color"
-    tools:context=".MainActivity"
+    tools:context=".Login"
     tools:ignore="MissingClass">
 
     <TextView
@@ -43,6 +43,7 @@
         android:background="@drawable/ovalo"
         android:backgroundTint="@color/cardview_light_background"
         android:fontFamily="sans-serif-black"
+        android:onClick="agregar"
         android:text="Login"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
