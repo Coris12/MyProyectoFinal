@@ -288,12 +288,12 @@ public class Nivel3_Animales extends AppCompatActivity {
     }
 
     private void doStuff(ImageView iv, int card){
-        MediaPlayer mediaPlayer101 = MediaPlayer.create(this, R.raw.cat);
-        MediaPlayer mediaPlayer102 = MediaPlayer.create(this, R.raw.chicken);
-        MediaPlayer mediaPlayer103 = MediaPlayer.create(this, R.raw.cow);
+
+
+
         MediaPlayer mediaPlayer105 = MediaPlayer.create(this, R.raw.donkey);
         MediaPlayer mediaPlayer106= MediaPlayer.create(this, R.raw.pig);
-        MediaPlayer mediaPlayer104 = MediaPlayer.create(this, R.raw.sheep);
+
         MediaPlayer mediaPlayer107 = MediaPlayer.create(this, R.raw.frog);
         MediaPlayer mediaPlayer108 = MediaPlayer.create(this, R.raw.shark);
         MediaPlayer mediaPlayer109 = MediaPlayer.create(this, R.raw.dog);
@@ -301,17 +301,39 @@ public class Nivel3_Animales extends AppCompatActivity {
         //establecer la imagen correcta en la vista de imagen
         if (cardsArray[card] ==101){
             iv.setImageResource(image101);
+             final MediaPlayer mediaPlayer101 = MediaPlayer.create(this, R.raw.cat);
             mediaPlayer101.start();
+            mediaPlayer101.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                @Override
+                public void onCompletion(MediaPlayer mp) {
+                    mediaPlayer101.release();
+                }
+            });
         }else if (cardsArray [card] ==102){
             iv.setImageResource(image102);
+            final MediaPlayer mediaPlayer102 = MediaPlayer.create(this, R.raw.chicken);
             mediaPlayer102.start();
+            mediaPlayer102.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                @Override
+                public void onCompletion(MediaPlayer mp) {
+                    mediaPlayer102.release();
+                }
+            });
         }
         else if (cardsArray [card] ==103){
             iv.setImageResource(image103);
+           final MediaPlayer mediaPlayer103 = MediaPlayer.create(this, R.raw.cow);
             mediaPlayer103.start();
+            mediaPlayer103.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                @Override
+                public void onCompletion(MediaPlayer mp) {
+                    mediaPlayer103.release();
+                }
+            });
         }
         else if (cardsArray [card] ==104){
             iv.setImageResource(image104);
+            final
             mediaPlayer104.start();
         }
         else if (cardsArray [card] ==105){

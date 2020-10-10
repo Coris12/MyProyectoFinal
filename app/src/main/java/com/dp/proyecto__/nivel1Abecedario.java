@@ -179,52 +179,135 @@ public class nivel1Abecedario extends AppCompatActivity {
     private void doStuff(ImageView iv,int card){
         if(TargetaArray[card] ==101){
             iv.setImageResource(imagen101);
-            MediaPlayer mediaPlayer101 = MediaPlayer.create(this, R.raw.a);
+            final   MediaPlayer mediaPlayer101 = MediaPlayer.create(this, R.raw.a);
             mediaPlayer101.start();
+            mediaPlayer101.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                @Override
+                public void onCompletion(MediaPlayer mp) {
+                    mediaPlayer101.release();
+                }
+            });
+
         }else if(TargetaArray[card] ==102){
             iv.setImageResource(imagen102);
-            MediaPlayer mediaPlayer102 = MediaPlayer.create(this, R.raw.b);
+            final   MediaPlayer mediaPlayer102 = MediaPlayer.create(this, R.raw.b);
             mediaPlayer102.start();
+            mediaPlayer102.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                @Override
+                public void onCompletion(MediaPlayer mp) {
+                    mediaPlayer102.release();
+                }
+            });
+
         }else if(TargetaArray[card] ==103){
             iv.setImageResource(imagen103);
-            MediaPlayer mediaPlayer103 = MediaPlayer.create(this, R.raw.c);
+            final   MediaPlayer mediaPlayer103 = MediaPlayer.create(this, R.raw.c);
             mediaPlayer103.start();
+            mediaPlayer103.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                @Override
+                public void onCompletion(MediaPlayer mp) {
+                    mediaPlayer103.release();
+                }
+            });
+
         }else if(TargetaArray[card] ==104){
             iv.setImageResource(imagen104);
-            MediaPlayer mediaPlayer104 = MediaPlayer.create(this, R.raw.d);
+            final   MediaPlayer mediaPlayer104 = MediaPlayer.create(this, R.raw.d);
             mediaPlayer104.start();
+            mediaPlayer104.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                @Override
+                public void onCompletion(MediaPlayer mp) {
+                    mediaPlayer104.release();
+                }
+            });
+
         }else if(TargetaArray[card] ==105){
             iv.setImageResource(imagen105);
-            MediaPlayer mediaPlayer105 = MediaPlayer.create(this, R.raw.e);
+            final   MediaPlayer mediaPlayer105 = MediaPlayer.create(this, R.raw.e);
             mediaPlayer105.start();
+            mediaPlayer105.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                @Override
+                public void onCompletion(MediaPlayer mp) {
+                    mediaPlayer105.release();
+                }
+            });
+
         }else if(TargetaArray[card] ==106){
             iv.setImageResource(imagen106);
-            MediaPlayer mediaPlayer106 = MediaPlayer.create(this, R.raw.f);
+            final   MediaPlayer mediaPlayer106 = MediaPlayer.create(this, R.raw.f);
             mediaPlayer106.start();
+            mediaPlayer106.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                @Override
+                public void onCompletion(MediaPlayer mp) {
+                    mediaPlayer106.release();
+                }
+            });
+
         }else if(TargetaArray[card] ==201){
             iv.setImageResource(imagen201);
-            MediaPlayer mediaPlayer101 = MediaPlayer.create(this, R.raw.a);
+            final   MediaPlayer mediaPlayer101 = MediaPlayer.create(this, R.raw.a);
             mediaPlayer101.start();
+            mediaPlayer101.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                @Override
+                public void onCompletion(MediaPlayer mp) {
+                    mediaPlayer101.release();
+                }
+            });
+
         }else if(TargetaArray[card] ==202){
             iv.setImageResource(imagen202);
-            MediaPlayer mediaPlayer102 = MediaPlayer.create(this, R.raw.b);
+            final   MediaPlayer mediaPlayer102 = MediaPlayer.create(this, R.raw.b);
             mediaPlayer102.start();
+            mediaPlayer102.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                @Override
+                public void onCompletion(MediaPlayer mp) {
+                    mediaPlayer102.release();
+                }
+            });
+
         }else if(TargetaArray[card] ==203){
             iv.setImageResource(imagen203);
-            MediaPlayer mediaPlayer103 = MediaPlayer.create(this, R.raw.c);
+            final   MediaPlayer mediaPlayer103 = MediaPlayer.create(this, R.raw.c);
             mediaPlayer103.start();
+            mediaPlayer103.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                @Override
+                public void onCompletion(MediaPlayer mp) {
+                    mediaPlayer103.release();
+                }
+            });
+
         }else if(TargetaArray[card] ==204){
             iv.setImageResource(imagen204);
-            MediaPlayer mediaPlayer104 = MediaPlayer.create(this, R.raw.d);
+            final   MediaPlayer mediaPlayer104 = MediaPlayer.create(this, R.raw.d);
             mediaPlayer104.start();
+            mediaPlayer104.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                @Override
+                public void onCompletion(MediaPlayer mp) {
+                    mediaPlayer104.release();
+                }
+            });
+
         }else if(TargetaArray[card] ==205){
             iv.setImageResource(imagen205);
-            MediaPlayer mediaPlayer105 = MediaPlayer.create(this, R.raw.e);
+            final   MediaPlayer mediaPlayer105 = MediaPlayer.create(this, R.raw.e);
             mediaPlayer105.start();
+            mediaPlayer105.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                @Override
+                public void onCompletion(MediaPlayer mp) {
+                    mediaPlayer105.release();
+                }
+            });
+
         }else if(TargetaArray[card] ==206){
             iv.setImageResource(imagen206);
-            MediaPlayer mediaPlayer106 = MediaPlayer.create(this, R.raw.f);
+            final   MediaPlayer mediaPlayer106 = MediaPlayer.create(this, R.raw.f);
             mediaPlayer106.start();
+            mediaPlayer106.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                @Override
+                public void onCompletion(MediaPlayer mp) {
+                    mediaPlayer106.release();
+                }
+            });
         }
         //verificar el numero de tarjeta  seleccionadas
         if(NumeroTarjeta==1){
