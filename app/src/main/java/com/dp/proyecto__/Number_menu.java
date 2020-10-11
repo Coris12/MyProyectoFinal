@@ -16,6 +16,8 @@ public class Number_menu extends AppCompatActivity {
         setContentView(R.layout.activity_number_menu);
 
         Button n1=(Button)  findViewById(R.id.btn1);
+        Button n2=(Button)  findViewById(R.id.btn2);
+        Button n3=(Button)  findViewById(R.id.btn3);
         ImageButton botonRegresar = (ImageButton)  findViewById(R.id.btn5);
 
 
@@ -28,6 +30,25 @@ public class Number_menu extends AppCompatActivity {
                 finish();
             }
         });
+
+        n2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentRegresar = new Intent(getApplicationContext(),Nivel2_numeros.class);
+                startActivity(intentRegresar);
+                finish();
+            }
+        });
+
+        n3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentRegresar = new Intent(getApplicationContext(),Nivel3_numeros.class);
+                startActivity(intentRegresar);
+                finish();
+            }
+        });
+
         botonRegresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

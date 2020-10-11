@@ -22,6 +22,8 @@
         <activity android:name=".Nivel3_Abecedario" />
         <activity android:name=".Nivel2_abecedario" />
         <activity android:name=".Nivel_1_numeros" />
+        <activity android:name=".Nivel2_numeros" />
+        <activity android:name=".Nivel3_numeros" />
         <activity android:name=".nivel1Abecedario" />
         <activity android:name=".Menu_principal" />
         <activity android:name=".Pareja_Animales" />
