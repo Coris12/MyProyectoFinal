@@ -16,6 +16,7 @@
         <activity android:name=".Intrucciones_Generales" />
         <activity android:name=".Instruccione_animales" />
         <activity android:name=".Alphabet_menu" />
+        <activity android:name=".Nivel1_colores" />
         <activity android:name=".Nivel_2_colores" />
         <activity android:name=".Nivel_3_Colores" />
         <activity android:name=".Nivel3_Animales" />

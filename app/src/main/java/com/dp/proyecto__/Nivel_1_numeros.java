@@ -60,7 +60,7 @@ public class Nivel_1_numeros extends AppCompatActivity {
                 ImageView imagen=(ImageView)findViewById(R.id.ImageNumeros);
                 imagen.setImageResource(R.drawable.ceropeces);
                 mediaPlayercero.start();
-                texto.setText("CERO");
+                texto.setText("ZERO");
 
             }
         });

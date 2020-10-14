@@ -25,7 +25,7 @@ public class Color_menu extends AppCompatActivity {
         nivel1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intentAnimales= new Intent (getApplicationContext(), Nivel_2_colores.class);
+                Intent intentAnimales= new Intent (getApplicationContext(), Nivel1_colores.class);
                 startActivity(intentAnimales);
                 finish();
 

@@ -68,7 +68,7 @@ public class Nivel2_numeros extends AppCompatActivity {
                 puntuacion1.setText("" + Score);
                 formatearnumeroOrden();
                 formatearNumeroDado();
-                audios();
+
                 }
             }
         }
@@ -85,7 +85,7 @@ public class Nivel2_numeros extends AppCompatActivity {
                     puntuacion1.setText("" + Score);
                     formatearnumeroOrden();
                     formatearNumeroDado();
-                    audios();
+
                 }
             }
         }
@@ -94,14 +94,14 @@ public class Nivel2_numeros extends AppCompatActivity {
         @Override
         public void onClick(View view) {
             if (numero == cb3) {
-                audios();
+
                 Score += 1;if(Score == 10) {
                     finalizar();
                 }else{
                     puntuacion1.setText("" + Score);
                     formatearnumeroOrden();
                     formatearNumeroDado();
-                    audios();
+
                 }
             }
         }
@@ -111,14 +111,14 @@ public class Nivel2_numeros extends AppCompatActivity {
         public void onClick(View view) {
             if (numero == cb4) {
                 Score += 1;
-                audios();
+
                 if(Score == 10) {
                     finalizar();
                 }else{
                     puntuacion1.setText("" + Score);
                     formatearnumeroOrden();
                     formatearNumeroDado();
-                    audios();
+
                 }
             }
         }
@@ -127,14 +127,14 @@ public class Nivel2_numeros extends AppCompatActivity {
         @Override
         public void onClick(View view) {
             if (numero == cb5) {
-                audios();
+
                 Score += 1;if(Score == 10) {
                     finalizar();
                 }else{
                     puntuacion1.setText("" + Score);
                     formatearnumeroOrden();
                     formatearNumeroDado();
-                    audios();
+
                 }
             }
         }
@@ -268,7 +268,7 @@ public class Nivel2_numeros extends AppCompatActivity {
                     .setPositiveButton("NEW", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
-                            Intent intent = new Intent(getApplicationContext(), Nivel2_numeros.class);
+                            Intent intent = new Intent(getApplicationContext(), Nivel3_numeros.class);
                             startActivity(intent);
                             finish();
 
