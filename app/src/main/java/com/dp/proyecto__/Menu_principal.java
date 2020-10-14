@@ -52,7 +52,7 @@ public class Menu_principal extends AppCompatActivity {
         botoncolores.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentAbecedario= new Intent (getApplicationContext(),Color_menu.class);
+                Intent intentAbecedario= new Intent (getApplicationContext(),Instruccion_color.class);
                 startActivity(intentAbecedario);
                 finish();
             }

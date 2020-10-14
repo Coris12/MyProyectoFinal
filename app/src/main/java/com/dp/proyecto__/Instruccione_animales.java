@@ -13,16 +13,16 @@ public class Instruccione_animales extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.instruccion_animal);
+    setContentView(R.layout.instruccion_animal);
 
-        ImageButton sig =(ImageButton)findViewById(R.id.button2);
+    ImageButton sig =(ImageButton)findViewById(R.id.button2);
         sig.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent =new Intent(getApplicationContext(),Menu_Animales.class);
-                startActivity(intent);
-                finish();
-            }
-        });
-    }
+        @Override
+        public void onClick(View v) {
+            Intent intent =new Intent(getApplicationContext(),Menu_Animales.class);
+            startActivity(intent);
+            finish();
+        }
+    });
+}
 }
