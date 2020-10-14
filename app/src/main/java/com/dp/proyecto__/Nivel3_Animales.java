@@ -392,7 +392,7 @@ public class Nivel3_Animales extends AppCompatActivity {
         }
         else if (cardsArray [card] ==110){
             iv.setImageResource(image110);
-            final MediaPlayer mediaPlayer110 = MediaPlayer.create(this, R.raw.pig);
+            final MediaPlayer mediaPlayer110 = MediaPlayer.create(this, R.raw.turtle);
             mediaPlayer110.start();
             mediaPlayer110.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                 @Override

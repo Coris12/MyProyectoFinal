@@ -47,10 +47,10 @@ public class Nivel2_numeros extends AppCompatActivity {
         final TextView puntuacion2 = (TextView) findViewById(R.id.txt_p2);
 
         mediacero = MediaPlayer.create(this, R.raw.cero);
-        mediauno = MediaPlayer.create(this, R.raw.cero);
-        mediados = MediaPlayer.create(this, R.raw.cero);
-        mediatres = MediaPlayer.create(this, R.raw.cero);
-        mediacuatro = MediaPlayer.create(this, R.raw.cero);
+        mediauno = MediaPlayer.create(this, R.raw.uno);
+        mediados = MediaPlayer.create(this, R.raw.dos);
+        mediatres = MediaPlayer.create(this, R.raw.tres);
+        mediacuatro = MediaPlayer.create(this, R.raw.cuatro);
 
         formatearnumeroOrden();
         formatearNumeroDado();
@@ -67,7 +67,9 @@ public class Nivel2_numeros extends AppCompatActivity {
                 }else{
                 puntuacion1.setText("" + Score);
                 formatearnumeroOrden();
-                formatearNumeroDado();}
+                formatearNumeroDado();
+                audios();
+                }
             }
         }
     });
@@ -75,12 +77,16 @@ public class Nivel2_numeros extends AppCompatActivity {
         @Override
         public void onClick(View view) {
             if (numero == cb2) {
-                Score += 1;if(Score == 10) {
+
+                Score += 1;
+                if(Score == 10) {
                     finalizar();
                 }else{
                     puntuacion1.setText("" + Score);
                     formatearnumeroOrden();
-                    formatearNumeroDado();}
+                    formatearNumeroDado();
+                    audios();
+                }
             }
         }
     });
@@ -88,12 +94,15 @@ public class Nivel2_numeros extends AppCompatActivity {
         @Override
         public void onClick(View view) {
             if (numero == cb3) {
+                audios();
                 Score += 1;if(Score == 10) {
                     finalizar();
                 }else{
                     puntuacion1.setText("" + Score);
                     formatearnumeroOrden();
-                    formatearNumeroDado();}
+                    formatearNumeroDado();
+                    audios();
+                }
             }
         }
     });
@@ -101,12 +110,16 @@ public class Nivel2_numeros extends AppCompatActivity {
         @Override
         public void onClick(View view) {
             if (numero == cb4) {
-                Score += 1;if(Score == 10) {
+                Score += 1;
+                audios();
+                if(Score == 10) {
                     finalizar();
                 }else{
                     puntuacion1.setText("" + Score);
                     formatearnumeroOrden();
-                    formatearNumeroDado();}
+                    formatearNumeroDado();
+                    audios();
+                }
             }
         }
     });
@@ -114,12 +127,15 @@ public class Nivel2_numeros extends AppCompatActivity {
         @Override
         public void onClick(View view) {
             if (numero == cb5) {
+                audios();
                 Score += 1;if(Score == 10) {
                     finalizar();
                 }else{
                     puntuacion1.setText("" + Score);
                     formatearnumeroOrden();
-                    formatearNumeroDado();}
+                    formatearNumeroDado();
+                    audios();
+                }
             }
         }
     });
@@ -149,21 +165,10 @@ public class Nivel2_numeros extends AppCompatActivity {
         dado9 = R.drawable.dado9;
     }
 
-    public void sonido(){
-        final   MediaPlayer mediaPlayer103 = MediaPlayer.create(this, R.raw.cuatro);
-        mediaPlayer103.start();
-        mediaPlayer103.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            @Override
-            public void onCompletion(MediaPlayer mp) {
-                mediaPlayer103.release();
-            }
-        });
-    }
 // nos da los numeros en ingles de manera aleatoria en los botones
     void formatearnumeroOrden() {
         switch ((int) Math.floor(Math.random() * 6 + 1)) {
             case 1:
-
                 btnuno.setImageResource(R.drawable.four);
                 cb1 = 4;
                 btndos.setImageResource(R.drawable.two);
@@ -258,7 +263,7 @@ public class Nivel2_numeros extends AppCompatActivity {
 
             AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(Nivel2_numeros.this);
             alertDialogBuilder
-                    .setMessage("GAMe OVER!\nP1: " + Score )
+                    .setMessage("GAME OVER!\nP1: " + Score )
                     .setCancelable(false)
                     .setPositiveButton("NEW", new DialogInterface.OnClickListener() {
                         @Override
@@ -272,7 +277,7 @@ public class Nivel2_numeros extends AppCompatActivity {
                     .setNegativeButton("EXIT", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
-                            Intent intent = new Intent(getApplicationContext(), Nivel3_numeros.class);
+                            Intent intent = new Intent(getApplicationContext(), Number_menu.class);
                             startActivity(intent);
                             finish();;
                         }
@@ -281,4 +286,17 @@ public class Nivel2_numeros extends AppCompatActivity {
             AlertDialog alertDialog = alertDialogBuilder.create();
             alertDialog.show();
         }
+    public void audios(){
+        if(((cb1==0)||(cb2==0)||(cb3==0)||(cb4==0))&&(numero==0)){
+            mediacero.start();
+        }else if(((cb1==1)||(cb2==1)||(cb3==1)||(cb4==1))&&(numero==1)){
+            mediauno.start();
+        }else if(((cb1==2)||(cb2==2)||(cb3==2)||(cb4==2))&&(numero==2)){
+            mediados.start();
+        }else if(((cb1==3)||(cb2==3)||(cb3==3)||(cb4==3))&&(numero==3)){
+            mediatres.start();
+        }else if(((cb1==4)||(cb2==4)||(cb3==4)||(cb4==4))&&(numero==4)){
+            mediacuatro.start();
+        }
+    }
     }

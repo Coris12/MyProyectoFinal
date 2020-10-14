@@ -245,8 +245,8 @@ public class Nivel3_numeros extends AppCompatActivity {
                 .setNegativeButton("EXIT", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        //Intent intent = new Intent(getApplicationContext(), Menu_numeros.class);
-                        //startActivity(intent);
+                       Intent intent = new Intent(getApplicationContext(), Number_menu.class);
+                        startActivity(intent);
                         finish();;
                     }
                 });

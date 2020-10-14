@@ -12,7 +12,7 @@
         android:layout_height="30dp"
         android:layout_marginLeft="110dp"
         android:layout_marginTop="20dp"
-        android:text="Select the correct Color" />
+        android:text="Select the correct Number" />
 
     <LinearLayout
         android:layout_width="match_parent"
