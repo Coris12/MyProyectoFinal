@@ -44,7 +44,6 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                     Persona ux=dp.getPersona(u,p);
                     Toast.makeText(this, "DATOS CORRECTOS", Toast.LENGTH_LONG).show();
                     Intent intent1=new Intent(getApplicationContext(),Intrucciones_Generales.class);
-
                     startActivity(intent1);
                 }else{
                     Toast.makeText(this, "DATOS INCORRECTOS", Toast.LENGTH_LONG).show();
