@@ -2,91 +2,69 @@ package com.dp.proyecto__;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class Registro extends AppCompatActivity {
-    EditText c1,c2,c3,c4,c5,c6 ;
+
+
+public class Registro extends AppCompatActivity implements View.OnClickListener{
+    EditText nombre,txtApellido,fecha,txtNick,txtContraseña,txtContraseña2;
+    dbPersona db;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registro);
-
-        c1=(EditText)findViewById(R.id.txtNombre);
-        c2=(EditText)findViewById(R.id.txtApellido);
-        c3=(EditText)findViewById(R.id.txtFecha);
-        c4=(EditText)findViewById(R.id.Nick);
-        c5=(EditText)findViewById(R.id.txtContraseña);
-        c6=(EditText)findViewById(R.id.txtContraseña2);
-
-
-
+       nombre = (EditText) findViewById(R.id.txtNombre);
+         txtApellido = (EditText) findViewById(R.id.txtApellido);
+        fecha = (EditText) findViewById(R.id.txtFecha);
+        txtNick = (EditText) findViewById(R.id.Nick);
+          txtContraseña = (EditText) findViewById(R.id.txtContraseña);
+          txtContraseña2 = (EditText) findViewById(R.id.txtContraseña2);
+        Button btnGuardar = (Button) findViewById(R.id.btnGuardar);
         Button btnCancelar= (Button) findViewById(R.id.btnCancelar);
-        btnCancelar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intentLogin= new Intent(getApplicationContext(), Login.class);
-                startActivity(intentLogin);
-            }
-        });
-                /*
-                Button btnIniciar= (Button) findViewById(R.id.btnIniciarSesion);
-        btnIniciar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intentMenuP = new Intent(getApplicationContext(),Menu_principal.class);
-                startActivity(intentMenuP);
-            }
-        });
-                * */
+        btnGuardar.setOnClickListener(this);
+        btnCancelar.setOnClickListener(this);
+        db=new dbPersona(this);
     }
-     public void agregar(View view){
-        if(validar()){
-            Toast.makeText(this, "Datos ingresados", Toast.LENGTH_SHORT).show();
-        }
-     }
-    public boolean validar (){
-        boolean retorno=true;
-        String cam1=c1.getText().toString();
-        String cam2=c2.getText().toString();
-        String cam3=c3.getText().toString();
-          String cam4=c4.getText().toString();
-        String cam5=c5.getText().toString();
-        String cam6=c6.getText().toString();
 
-        if(cam1.isEmpty()){
-            c1.setError("ESTE CAMPO NO PUEDE QUEDAR VACIO");
-           retorno=false;
-        }
-        if(cam2.isEmpty()){
-            c2.setError("ESTE CAMPO NO PUEDE QUEDAR VACIO");
-            retorno=false;
-        }
-        if(cam3.isEmpty()){
-            c3.setError("ESTE CAMPO NO PUEDE QUEDAR VACIO");
-            retorno=false;
-        }
-       if(cam4.isEmpty()){
-           c4.setError("ESTE CAMPO NO PUEDE QUEDAR VACIO");
-           retorno=false;
-          }
-        if(cam5.isEmpty()){
-            c5.setError("ESTE CAMPO NO PUEDE QUEDAR VACIO");
-            retorno=false;
-        }
-        if(cam6.isEmpty()){
-            c6.setError("ESTE CAMPO NO PUEDE QUEDAR VACIO");
-            retorno=false;
-        }
+    @Override
+    public void onClick(View v) {
+        switch(v.getId()){
+            case R.id.btnGuardar:
+                Persona p=new Persona();
+                p.setNombre(nombre.getText().toString());
+                p.setApellido(txtApellido.getText().toString());
+                p.setFechana(fecha.getText().toString());
+                p.setNickname(txtNick.getText().toString());
+                p.setContraseña(txtContraseña.getText().toString());
+                p.setContraseña(txtContraseña2.getText().toString());
+                if(!p.isNull()){
+                    Toast.makeText(this, "ERROR: CAMPOS VACIOS", Toast.LENGTH_LONG).show();
+                }else if(db.Insertarusuario(p)){
+                Toast.makeText(this, "REGISTRO EXITO", Toast.LENGTH_LONG).show();
+                    Intent intent=new Intent(getApplicationContext(),Login.class);
+                    startActivity(intent);
+                    finish();
+                }else{
+                Toast.makeText(this, "USUARIO YA REGISTRADO", Toast.LENGTH_LONG).show();
 
-        if(cam6==cam5){
-                 }else {
-            Toast.makeText(this, "Contraseñas correctas incorrectas", Toast.LENGTH_SHORT).show();
+            }
+
+
+                break;
+            case R.id.btnCancelar:
+                Intent intent=new Intent(getApplicationContext(),Login.class);
+                startActivity(intent);
+                finish();
+                break;
+            default:
+
         }
-        return retorno ;
     }
-}
+    }

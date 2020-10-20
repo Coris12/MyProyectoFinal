@@ -7,57 +7,55 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Switch;
 import android.widget.Toast;
 
-public class Login extends AppCompatActivity {
+public class Login extends AppCompatActivity implements View.OnClickListener {
     EditText c1,c2;
+    dbPersona dp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+    c1=(EditText)findViewById(R.id.txtUsuario) ;
+    c2=(EditText)findViewById(R.id.TextPassword) ;
 
-
+    dp=new dbPersona(this);
 //el boton de iniciar me permite pasar a la siguinete pantalla de menu principal-----------------------------------------------------------
         Button btnIniciar= (Button) findViewById(R.id.btnIniciarSesion);
-        btnIniciar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intentMenuP = new Intent(getApplicationContext(),Intrucciones_Generales.class);
-                startActivity(intentMenuP);
 
-            }
-        });
 //el boton de registro me permite pasar a la siguinete pantalla de menu principal-----------------------------------------------------------
         Button btnRegistro= (Button) findViewById(R.id.btnRegistrarse);
-        btnRegistro.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intentRegistro= new Intent(getApplicationContext(),Registro.class);
-                startActivity(intentRegistro);
-            }
-        });
+
+        btnIniciar.setOnClickListener(this);
+        btnRegistro.setOnClickListener(this);
     }
-    public void agregar(View view){
-        if(validar()){
-            Toast.makeText(this, "Login", Toast.LENGTH_SHORT).show();
-        }
-    }
-    public boolean validar (){
-        boolean retorno=true;
-        String cam1=c1.getText().toString();
-        String cam2=c2.getText().toString();
 
+    @Override
+    public void onClick(View v) {
+        switch(v.getId()){
+            case R.id.btnIniciarSesion:
+                String u=c1.getText().toString();
+                String p=c2.getText().toString();
+                if(u.equals("")&&p.equals("")){
+                    Toast.makeText(this, "ERROR:CAMPOS VACIOS", Toast.LENGTH_LONG).show();
+                }else if(dp.Login(u, p)==1){
+                    Persona ux=dp.getPersona(u,p);
+                    Toast.makeText(this, "DATOS CORRECTOS", Toast.LENGTH_LONG).show();
+                    Intent intent1=new Intent(getApplicationContext(),Intrucciones_Generales.class);
 
-        if(cam1.isEmpty()){
-            c1.setError("ESTE CAMPO NO PUEDE QUEDAR VACIO");
-            retorno=false;
-        }
-        if(cam2.isEmpty()){
-            c2.setError("ESTE CAMPO NO PUEDE QUEDAR VACIO");
-            retorno=false;
-        }
+                    startActivity(intent1);
+                }else{
+                    Toast.makeText(this, "DATOS INCORRECTOS", Toast.LENGTH_LONG).show();
+                }
+                break;
+            case R.id.btnRegistrarse:
+                Intent intent=new Intent(getApplicationContext(),Registro.class);
+                startActivity(intent);
+                break;
+            default:
 
-        return retorno ;
+        }
     }
 }
